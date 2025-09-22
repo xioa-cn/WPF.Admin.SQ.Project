@@ -7,6 +7,7 @@
         <ResourceDictionary Source="Themes/XMasks.xaml" />
         <ResourceDictionary Source="/WPF.Admin.Themes;component/Themes/AppAuthPath.xaml" />
         <ResourceDictionary Source="/WPF.Admin.Themes;component/Themes/VasuButton.xaml" />
+        <ResourceDictionary Source="/WPF.Admin.Themes;component/Themes/CircularLight.xaml"></ResourceDictionary>
 
     </ResourceDictionary.MergedDictionaries>
 

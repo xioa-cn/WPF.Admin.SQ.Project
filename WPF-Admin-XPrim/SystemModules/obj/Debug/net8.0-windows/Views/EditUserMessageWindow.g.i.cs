@@ -94,7 +94,7 @@ namespace SystemModules.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SystemModules;component/views/editusermessagewindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SystemModules;V1.0.0.0;component/views/editusermessagewindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\EditUserMessageWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

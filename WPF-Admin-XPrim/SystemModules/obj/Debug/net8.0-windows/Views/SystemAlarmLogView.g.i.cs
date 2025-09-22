@@ -55,7 +55,7 @@ namespace SystemModules.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SystemModules;component/views/systemalarmlogview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SystemModules;V1.0.0.0;component/views/systemalarmlogview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\SystemAlarmLogView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

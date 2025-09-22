@@ -2,6 +2,7 @@
 using CommunityToolkit.Mvvm.Input;
 using System.Collections.ObjectModel;
 using System.Windows.Threading;
+using SQ.Project.Component;
 using WPF.Admin.Models;
 
 namespace SQ.Project.ViewModels
@@ -22,6 +23,9 @@ namespace SQ.Project.ViewModels
         public ObservableCollection<CarouselContent> Items { get; set; }
 
         private DispatcherTimer? _timer;
+        
+        private readonly CodeCollectionViewModel _codeCollectionViewModel = new CodeCollectionViewModel();
+        private readonly StationFirstViewModel _stationFirstViewModel = new StationFirstViewModel();
 
         public SQVisualHomeViewModel()
         {
@@ -29,21 +33,16 @@ namespace SQ.Project.ViewModels
                [
                   new CarouselContent()
                   {
-                      Name= "OP10",
-                      IsActive = true
+                      Name= "批量物料采集",
+                      IsActive = true,
+                      Page = new CodeCollection(_codeCollectionViewModel)
                   },
                   new CarouselContent()
                   {
-                      Name= "OP20"
+                      Name= "OP20",
+                      Page = new StationFirst(_stationFirstViewModel)
                   },
-                  new CarouselContent()
-                  {
-                      Name= "OP30"
-                  },
-                  new CarouselContent()
-                  {
-                      Name= "OP40"
-                  },
+                 
                ]);
         }
 

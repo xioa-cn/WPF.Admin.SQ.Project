@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CMS.ReaderConfigLIbrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ee6f1c3030cd575c97e44f8ec0f1b4e38c49749")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e10b18aa8457cfa265ce48ab6c0c63af9d5cf2f")]
 [assembly: System.Reflection.AssemblyProductAttribute("CMS.ReaderConfigLIbrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CMS.ReaderConfigLIbrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

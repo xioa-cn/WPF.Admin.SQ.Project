@@ -54,7 +54,7 @@ namespace WPFAdmin.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WPFAdmin;component/views/configwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WPFAdmin;V1.0.0.0;component/views/configwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\ConfigWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

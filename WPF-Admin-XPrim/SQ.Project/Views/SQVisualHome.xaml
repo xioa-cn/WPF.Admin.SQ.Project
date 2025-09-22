@@ -60,7 +60,7 @@
                 <RowDefinition />
                 <RowDefinition Height="auto" />
             </Grid.RowDefinitions>
-            <StackPanel Orientation="Horizontal">
+            <!--<StackPanel Orientation="Horizontal">
                 <TextBlock
                     Margin="10,0"
                     FontSize="30"
@@ -68,9 +68,12 @@
                     Foreground="{DynamicResource SYstem.Main.Color.Fill}">
                     转子线体数据过站信息
                 </TextBlock>
-            </StackPanel>
-            <Grid Grid.Row="1">
-                <Viewbox>
+            </StackPanel>-->
+            <Grid
+                Grid.Row="1"
+                Width="Auto"
+                Height="Auto">
+                <Viewbox Stretch="Uniform" StretchDirection="Both">
                     <ItemsControl ItemsSource="{Binding Items}">
                         <ItemsControl.Template>
                             <ControlTemplate>
@@ -92,14 +95,26 @@
                         </ItemsControl.ItemContainerStyle>
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
-                                <!--  子元素不可以在视觉上超出父容器的边界  -->
                                 <Grid ClipToBounds="True">
                                     <Border
                                         x:Name="ImageContainer"
                                         Background="{DynamicResource Background.Brush}"
                                         CornerRadius="4"
                                         Opacity="0">
-                                        <TextBlock Text="{Binding Name}" />
+                                        <Grid Width="1920" Height="900">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height=".2*" />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <TextBlock
+                                                Grid.Row="0"
+                                                HorizontalAlignment="Left"
+                                                VerticalAlignment="Top"
+                                                FontSize="25"
+                                                Foreground="{DynamicResource SYstem.Main.Color.Fill}"
+                                                Text="{Binding Name}" />
+                                            <ContentControl Grid.Row="1" Content="{Binding Page}" />
+                                        </Grid>
                                         <Border.Style>
                                             <Style TargetType="Border">
                                                 <Setter Property="Visibility" Value="Collapsed" />

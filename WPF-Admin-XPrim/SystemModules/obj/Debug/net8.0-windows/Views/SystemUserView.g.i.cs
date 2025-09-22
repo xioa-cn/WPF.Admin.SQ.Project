@@ -69,7 +69,7 @@ namespace SystemModules.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SystemModules;component/views/systemuserview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SystemModules;V1.0.0.0;component/views/systemuserview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\SystemUserView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

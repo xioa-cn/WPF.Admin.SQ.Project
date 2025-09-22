@@ -63,7 +63,7 @@ namespace CMS.AppRouters.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CMS.AppRouters;component/views/routerssettingsview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CMS.AppRouters;V1.0.0.0;component/views/routerssettingsview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\RoutersSettingsView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -55,7 +55,7 @@ namespace PressMachineCMS.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PressMachineCMS;component/views/visualsettings.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PressMachineCMS;V1.0.0.0;component/views/visualsettings.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\VisualSettings.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

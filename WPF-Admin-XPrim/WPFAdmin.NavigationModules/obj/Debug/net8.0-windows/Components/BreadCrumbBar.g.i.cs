@@ -72,7 +72,7 @@ namespace WPFAdmin.NavigationModules.Components {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WPFAdmin.NavigationModules;component/components/breadcrumbbar.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WPFAdmin.NavigationModules;V1.0.0.0;component/components/breadcrumbbar.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Components\BreadCrumbBar.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

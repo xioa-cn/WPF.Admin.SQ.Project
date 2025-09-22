@@ -50,7 +50,7 @@ namespace SQ.Project.Views
                 if (disposing)
                 {
                     // 清理托管资源
-                    _viewModel.Dispose();
+                    _viewModel?.Dispose();
                 }
 
                 _disposed = true;
