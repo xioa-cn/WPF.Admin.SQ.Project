@@ -4,7 +4,7 @@
 library
 C#
 .cs
-E:\项目\瞬驱\PressMachineSystem.AutoConfigSystem\WPF-Admin-XPrim\InfiniteScrollingModules\obj\Debug\net8.0-windows\
+E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\InfiniteScrollingModules\obj\Debug\net8.0-windows\
 InfiniteScrollingModules
 none
 false
@@ -13,8 +13,8 @@ TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR
 1192102502
 
 62031611470
-3002067385586
+300283695448
 Views\InfiniteScrollingView.xaml;
 
-True
+False
 

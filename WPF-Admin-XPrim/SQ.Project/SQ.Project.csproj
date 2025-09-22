@@ -8,9 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\panel.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\WPF.Admin.Models\WPF.Admin.Models.csproj" />
     <ProjectReference Include="..\WPF.Admin.Service\WPF.Admin.Service.csproj" />
     <ProjectReference Include="..\WPF.Admin.Themes\WPF.Admin.Themes.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\panel.png" />
   </ItemGroup>
 
 </Project>

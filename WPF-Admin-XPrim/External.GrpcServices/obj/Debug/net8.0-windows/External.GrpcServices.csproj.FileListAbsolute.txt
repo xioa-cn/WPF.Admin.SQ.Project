@@ -50,10 +50,10 @@ E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\External.GrpcServices\obj\
 E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\External.GrpcServices\obj\Debug\net8.0-windows\staticwebassets.build.json.cache
 E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\External.GrpcServices\obj\Debug\net8.0-windows\staticwebassets.development.json
 E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\External.GrpcServices\obj\Debug\net8.0-windows\staticwebassets.build.endpoints.json
-E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\External.GrpcServices\obj\Debug\net8.0-windows\swae.build.ex.cache
 E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\External.GrpcServices\obj\Debug\net8.0-windows\External.5D920B78.Up2Date
 E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\External.GrpcServices\obj\Debug\net8.0-windows\External.GrpcServices.dll
 E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\External.GrpcServices\obj\Debug\net8.0-windows\refint\External.GrpcServices.dll
 E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\External.GrpcServices\obj\Debug\net8.0-windows\External.GrpcServices.pdb
 E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\External.GrpcServices\obj\Debug\net8.0-windows\External.GrpcServices.genruntimeconfig.cache
 E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\External.GrpcServices\obj\Debug\net8.0-windows\ref\External.GrpcServices.dll
+E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\External.GrpcServices\obj\Debug\net8.0-windows\staticwebassets.upToDateCheck.txt

@@ -28,6 +28,11 @@
             <converter:LoginAuthToVisibilityAuthConverter x:Key="EngineerVisibility" LoginAuth="Engineer" />
 
             <converter:PageContentAuthIsEnabledConverter x:Key="PageContentAuthIsEnabledConverter" />
+
+
+            <Style TargetType="Frame">
+                <Setter Property="BorderBrush" Value="Transparent" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
