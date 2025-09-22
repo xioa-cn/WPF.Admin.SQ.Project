@@ -10,6 +10,18 @@
 
 using CustomModules.Components;
 using CustomModules.Views;
+using HandyControl.Controls;
+using HandyControl.Data;
+using HandyControl.Expression.Media;
+using HandyControl.Expression.Shapes;
+using HandyControl.Interactivity;
+using HandyControl.Media.Animation;
+using HandyControl.Media.Effects;
+using HandyControl.Properties.Langs;
+using HandyControl.Themes;
+using HandyControl.Tools;
+using HandyControl.Tools.Converter;
+using HandyControl.Tools.Extension;
 using System;
 using System.Diagnostics;
 using System.Windows;
@@ -31,6 +43,7 @@ using System.Windows.Media.TextFormatting;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Shell;
+using WPF.Admin.Themes.Converter;
 
 
 namespace CustomModules.Views {

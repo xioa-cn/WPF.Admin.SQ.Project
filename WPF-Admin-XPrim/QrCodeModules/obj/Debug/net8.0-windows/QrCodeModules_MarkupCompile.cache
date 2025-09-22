@@ -4,7 +4,7 @@
 library
 C#
 .cs
-E:\项目\瞬驱\PressMachineSystem.AutoConfigSystem\WPF-Admin-XPrim\QrCodeModules\obj\Debug\net8.0-windows\
+E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\QrCodeModules\obj\Debug\net8.0-windows\
 QrCodeModules
 none
 false
@@ -13,7 +13,7 @@ TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR
 1-1791433249
 
 51176903149
-3191149943663
+319-211360382
 Views\QrCodeView.xaml;
 
 True

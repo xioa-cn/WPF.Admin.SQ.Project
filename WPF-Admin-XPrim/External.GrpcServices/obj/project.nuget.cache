@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BS26UPIjUe4=",
+  "dgSpecHash": "bB4PH/Hsnxw=",
   "success": true,
-  "projectFilePath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\External.GrpcServices\\External.GrpcServices.csproj",
+  "projectFilePath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\External.GrpcServices\\External.GrpcServices.csproj",
   "expectedPackageFiles": [
     "D:\\nuget\\azure.core\\1.44.1\\azure.core.1.44.1.nupkg.sha512",
     "D:\\nuget\\azure.identity\\1.13.0\\azure.identity.1.13.0.nupkg.sha512",

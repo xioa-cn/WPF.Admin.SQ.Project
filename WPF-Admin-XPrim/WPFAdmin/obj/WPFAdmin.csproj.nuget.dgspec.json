@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPFAdmin\\WPFAdmin.csproj": {}
+    "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPFAdmin\\WPFAdmin.csproj": {}
   },
   "projects": {
-    "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\CMS.AppRouters\\CMS.AppRouters.csproj": {
+    "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\CMS.AppRouters\\CMS.AppRouters.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\CMS.AppRouters\\CMS.AppRouters.csproj",
+        "projectUniqueName": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\CMS.AppRouters\\CMS.AppRouters.csproj",
         "projectName": "CMS.AppRouters",
-        "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\CMS.AppRouters\\CMS.AppRouters.csproj",
+        "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\CMS.AppRouters\\CMS.AppRouters.csproj",
         "packagesPath": "D:\\nuget",
-        "outputPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\CMS.AppRouters\\obj\\",
+        "outputPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\CMS.AppRouters\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\DevExpress 24.2\\Components\\Offline Packages",
@@ -36,17 +36,17 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj"
               }
             }
           }
@@ -89,14 +89,14 @@
         }
       }
     },
-    "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\CMS.AppSettings\\CMS.AppSettings.csproj": {
+    "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\CMS.AppSettings\\CMS.AppSettings.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\CMS.AppSettings\\CMS.AppSettings.csproj",
+        "projectUniqueName": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\CMS.AppSettings\\CMS.AppSettings.csproj",
         "projectName": "CMS.AppSettings",
-        "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\CMS.AppSettings\\CMS.AppSettings.csproj",
+        "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\CMS.AppSettings\\CMS.AppSettings.csproj",
         "packagesPath": "D:\\nuget",
-        "outputPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\CMS.AppSettings\\obj\\",
+        "outputPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\CMS.AppSettings\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\DevExpress 24.2\\Components\\Offline Packages",
@@ -121,14 +121,14 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj"
               }
             }
           }
@@ -171,14 +171,14 @@
         }
       }
     },
-    "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\CMS.ReaderConfigLIbrary\\CMS.ReaderConfigLIbrary.csproj": {
+    "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\CMS.ReaderConfigLIbrary\\CMS.ReaderConfigLIbrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\CMS.ReaderConfigLIbrary\\CMS.ReaderConfigLIbrary.csproj",
+        "projectUniqueName": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\CMS.ReaderConfigLIbrary\\CMS.ReaderConfigLIbrary.csproj",
         "projectName": "CMS.ReaderConfigLIbrary",
-        "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\CMS.ReaderConfigLIbrary\\CMS.ReaderConfigLIbrary.csproj",
+        "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\CMS.ReaderConfigLIbrary\\CMS.ReaderConfigLIbrary.csproj",
         "packagesPath": "D:\\nuget",
-        "outputPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\CMS.ReaderConfigLIbrary\\obj\\",
+        "outputPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\CMS.ReaderConfigLIbrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\DevExpress 24.2\\Components\\Offline Packages",
@@ -203,17 +203,17 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj"
               }
             }
           }
@@ -256,14 +256,14 @@
         }
       }
     },
-    "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\External.GrpcServices\\External.GrpcServices.csproj": {
+    "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\External.GrpcServices\\External.GrpcServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\External.GrpcServices\\External.GrpcServices.csproj",
+        "projectUniqueName": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\External.GrpcServices\\External.GrpcServices.csproj",
         "projectName": "External.GrpcServices",
-        "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\External.GrpcServices\\External.GrpcServices.csproj",
+        "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\External.GrpcServices\\External.GrpcServices.csproj",
         "packagesPath": "D:\\nuget",
-        "outputPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\External.GrpcServices\\obj\\",
+        "outputPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\External.GrpcServices\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\DevExpress 24.2\\Components\\Offline Packages",
@@ -288,11 +288,11 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj"
               }
             }
           }
@@ -341,14 +341,14 @@
         }
       }
     },
-    "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\PressMachineCMS\\PressMachineCMS.csproj": {
+    "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\PressMachineCMS\\PressMachineCMS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\PressMachineCMS\\PressMachineCMS.csproj",
+        "projectUniqueName": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\PressMachineCMS\\PressMachineCMS.csproj",
         "projectName": "PressMachineCMS",
-        "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\PressMachineCMS\\PressMachineCMS.csproj",
+        "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\PressMachineCMS\\PressMachineCMS.csproj",
         "packagesPath": "D:\\nuget",
-        "outputPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\PressMachineCMS\\obj\\",
+        "outputPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\PressMachineCMS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\DevExpress 24.2\\Components\\Offline Packages",
@@ -373,20 +373,20 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\CMS.ReaderConfigLIbrary\\CMS.ReaderConfigLIbrary.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\CMS.ReaderConfigLIbrary\\CMS.ReaderConfigLIbrary.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\CMS.ReaderConfigLIbrary\\CMS.ReaderConfigLIbrary.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\CMS.ReaderConfigLIbrary\\CMS.ReaderConfigLIbrary.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj"
               }
             }
           }
@@ -429,14 +429,14 @@
         }
       }
     },
-    "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\RouterEventModules\\RouterEventModules.csproj": {
+    "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\RouterEventModules\\RouterEventModules.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\RouterEventModules\\RouterEventModules.csproj",
+        "projectUniqueName": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\RouterEventModules\\RouterEventModules.csproj",
         "projectName": "RouterEventModules",
-        "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\RouterEventModules\\RouterEventModules.csproj",
+        "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\RouterEventModules\\RouterEventModules.csproj",
         "packagesPath": "D:\\nuget",
-        "outputPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\RouterEventModules\\obj\\",
+        "outputPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\RouterEventModules\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\DevExpress 24.2\\Components\\Offline Packages",
@@ -461,11 +461,11 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj"
               }
             }
           }
@@ -508,14 +508,14 @@
         }
       }
     },
-    "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\SharedMemoryDemoModules\\SharedMemoryDemoModules.csproj": {
+    "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\SharedMemoryDemoModules\\SharedMemoryDemoModules.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\SharedMemoryDemoModules\\SharedMemoryDemoModules.csproj",
+        "projectUniqueName": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\SharedMemoryDemoModules\\SharedMemoryDemoModules.csproj",
         "projectName": "SharedMemoryDemoModules",
-        "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\SharedMemoryDemoModules\\SharedMemoryDemoModules.csproj",
+        "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\SharedMemoryDemoModules\\SharedMemoryDemoModules.csproj",
         "packagesPath": "D:\\nuget",
-        "outputPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\SharedMemoryDemoModules\\obj\\",
+        "outputPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\SharedMemoryDemoModules\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\DevExpress 24.2\\Components\\Offline Packages",
@@ -540,14 +540,14 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj"
               }
             }
           }
@@ -590,14 +590,14 @@
         }
       }
     },
-    "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\SQ.Project\\SQ.Project.csproj": {
+    "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\SQ.Project\\SQ.Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\SQ.Project\\SQ.Project.csproj",
+        "projectUniqueName": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\SQ.Project\\SQ.Project.csproj",
         "projectName": "SQ.Project",
-        "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\SQ.Project\\SQ.Project.csproj",
+        "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\SQ.Project\\SQ.Project.csproj",
         "packagesPath": "D:\\nuget",
-        "outputPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\SQ.Project\\obj\\",
+        "outputPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\SQ.Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\DevExpress 24.2\\Components\\Offline Packages",
@@ -622,14 +622,14 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj"
               }
             }
           }
@@ -672,14 +672,14 @@
         }
       }
     },
-    "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\SystemModules\\SystemModules.csproj": {
+    "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\SystemModules\\SystemModules.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\SystemModules\\SystemModules.csproj",
+        "projectUniqueName": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\SystemModules\\SystemModules.csproj",
         "projectName": "SystemModules",
-        "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\SystemModules\\SystemModules.csproj",
+        "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\SystemModules\\SystemModules.csproj",
         "packagesPath": "D:\\nuget",
-        "outputPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\SystemModules\\obj\\",
+        "outputPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\SystemModules\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\DevExpress 24.2\\Components\\Offline Packages",
@@ -704,14 +704,14 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj"
               }
             }
           }
@@ -754,14 +754,14 @@
         }
       }
     },
-    "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
+    "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj",
+        "projectUniqueName": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj",
         "projectName": "WPF.Admin.Models",
-        "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj",
+        "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj",
         "packagesPath": "D:\\nuget",
-        "outputPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\obj\\",
+        "outputPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\DevExpress 24.2\\Components\\Offline Packages",
@@ -909,14 +909,14 @@
         }
       }
     },
-    "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj": {
+    "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj",
+        "projectUniqueName": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj",
         "projectName": "WPF.Admin.Service",
-        "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj",
+        "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj",
         "packagesPath": "D:\\nuget",
-        "outputPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Service\\obj\\",
+        "outputPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\DevExpress 24.2\\Components\\Offline Packages",
@@ -941,8 +941,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
               }
             }
           }
@@ -991,14 +991,14 @@
         }
       }
     },
-    "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
+    "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj",
+        "projectUniqueName": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj",
         "projectName": "WPF.Admin.Themes",
-        "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj",
+        "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj",
         "packagesPath": "D:\\nuget",
-        "outputPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\obj\\",
+        "outputPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\DevExpress 24.2\\Components\\Offline Packages",
@@ -1023,11 +1023,11 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj"
               }
             }
           }
@@ -1076,14 +1076,14 @@
         }
       }
     },
-    "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj": {
+    "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj",
+        "projectUniqueName": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj",
         "projectName": "WPF.SharedMemory",
-        "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj",
+        "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj",
         "packagesPath": "D:\\nuget",
-        "outputPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.SharedMemory\\obj\\",
+        "outputPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.SharedMemory\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\DevExpress 24.2\\Components\\Offline Packages",
@@ -1148,14 +1148,14 @@
         }
       }
     },
-    "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPFAdmin.DialogModules\\WPFAdmin.DialogModules.csproj": {
+    "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPFAdmin.DialogModules\\WPFAdmin.DialogModules.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPFAdmin.DialogModules\\WPFAdmin.DialogModules.csproj",
+        "projectUniqueName": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPFAdmin.DialogModules\\WPFAdmin.DialogModules.csproj",
         "projectName": "WPFAdmin.DialogModules",
-        "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPFAdmin.DialogModules\\WPFAdmin.DialogModules.csproj",
+        "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPFAdmin.DialogModules\\WPFAdmin.DialogModules.csproj",
         "packagesPath": "D:\\nuget",
-        "outputPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPFAdmin.DialogModules\\obj\\",
+        "outputPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPFAdmin.DialogModules\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\DevExpress 24.2\\Components\\Offline Packages",
@@ -1180,8 +1180,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
               }
             }
           }
@@ -1224,14 +1224,14 @@
         }
       }
     },
-    "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPFAdmin.LoginModules\\WPFAdmin.LoginModules.csproj": {
+    "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPFAdmin.LoginModules\\WPFAdmin.LoginModules.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPFAdmin.LoginModules\\WPFAdmin.LoginModules.csproj",
+        "projectUniqueName": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPFAdmin.LoginModules\\WPFAdmin.LoginModules.csproj",
         "projectName": "WPFAdmin.LoginModules",
-        "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPFAdmin.LoginModules\\WPFAdmin.LoginModules.csproj",
+        "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPFAdmin.LoginModules\\WPFAdmin.LoginModules.csproj",
         "packagesPath": "D:\\nuget",
-        "outputPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPFAdmin.LoginModules\\obj\\",
+        "outputPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPFAdmin.LoginModules\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\DevExpress 24.2\\Components\\Offline Packages",
@@ -1256,14 +1256,14 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj"
               }
             }
           }
@@ -1306,14 +1306,14 @@
         }
       }
     },
-    "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPFAdmin.NavigationModules\\WPFAdmin.NavigationModules.csproj": {
+    "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPFAdmin.NavigationModules\\WPFAdmin.NavigationModules.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPFAdmin.NavigationModules\\WPFAdmin.NavigationModules.csproj",
+        "projectUniqueName": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPFAdmin.NavigationModules\\WPFAdmin.NavigationModules.csproj",
         "projectName": "WPFAdmin.NavigationModules",
-        "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPFAdmin.NavigationModules\\WPFAdmin.NavigationModules.csproj",
+        "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPFAdmin.NavigationModules\\WPFAdmin.NavigationModules.csproj",
         "packagesPath": "D:\\nuget",
-        "outputPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPFAdmin.NavigationModules\\obj\\",
+        "outputPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPFAdmin.NavigationModules\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\DevExpress 24.2\\Components\\Offline Packages",
@@ -1338,14 +1338,14 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Models\\WPF.Admin.Models.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Service\\WPF.Admin.Service.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj"
               }
             }
           }
@@ -1388,14 +1388,14 @@
         }
       }
     },
-    "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPFAdmin\\WPFAdmin.csproj": {
+    "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPFAdmin\\WPFAdmin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPFAdmin\\WPFAdmin.csproj",
+        "projectUniqueName": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPFAdmin\\WPFAdmin.csproj",
         "projectName": "WPFAdmin",
-        "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPFAdmin\\WPFAdmin.csproj",
+        "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPFAdmin\\WPFAdmin.csproj",
         "packagesPath": "D:\\nuget",
-        "outputPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPFAdmin\\obj\\",
+        "outputPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPFAdmin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\DevExpress 24.2\\Components\\Offline Packages",
@@ -1420,41 +1420,41 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\CMS.AppRouters\\CMS.AppRouters.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\CMS.AppRouters\\CMS.AppRouters.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\CMS.AppRouters\\CMS.AppRouters.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\CMS.AppRouters\\CMS.AppRouters.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\CMS.AppSettings\\CMS.AppSettings.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\CMS.AppSettings\\CMS.AppSettings.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\CMS.AppSettings\\CMS.AppSettings.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\CMS.AppSettings\\CMS.AppSettings.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\External.GrpcServices\\External.GrpcServices.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\External.GrpcServices\\External.GrpcServices.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\External.GrpcServices\\External.GrpcServices.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\External.GrpcServices\\External.GrpcServices.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\PressMachineCMS\\PressMachineCMS.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\PressMachineCMS\\PressMachineCMS.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\PressMachineCMS\\PressMachineCMS.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\PressMachineCMS\\PressMachineCMS.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\RouterEventModules\\RouterEventModules.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\RouterEventModules\\RouterEventModules.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\RouterEventModules\\RouterEventModules.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\RouterEventModules\\RouterEventModules.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\SharedMemoryDemoModules\\SharedMemoryDemoModules.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\SharedMemoryDemoModules\\SharedMemoryDemoModules.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\SharedMemoryDemoModules\\SharedMemoryDemoModules.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\SharedMemoryDemoModules\\SharedMemoryDemoModules.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\SQ.Project\\SQ.Project.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\SQ.Project\\SQ.Project.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\SQ.Project\\SQ.Project.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\SQ.Project\\SQ.Project.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\SystemModules\\SystemModules.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\SystemModules\\SystemModules.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\SystemModules\\SystemModules.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\SystemModules\\SystemModules.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPFAdmin.DialogModules\\WPFAdmin.DialogModules.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPFAdmin.DialogModules\\WPFAdmin.DialogModules.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPFAdmin.DialogModules\\WPFAdmin.DialogModules.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPFAdmin.DialogModules\\WPFAdmin.DialogModules.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPFAdmin.LoginModules\\WPFAdmin.LoginModules.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPFAdmin.LoginModules\\WPFAdmin.LoginModules.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPFAdmin.LoginModules\\WPFAdmin.LoginModules.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPFAdmin.LoginModules\\WPFAdmin.LoginModules.csproj"
               },
-              "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPFAdmin.NavigationModules\\WPFAdmin.NavigationModules.csproj": {
-                "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPFAdmin.NavigationModules\\WPFAdmin.NavigationModules.csproj"
+              "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPFAdmin.NavigationModules\\WPFAdmin.NavigationModules.csproj": {
+                "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPFAdmin.NavigationModules\\WPFAdmin.NavigationModules.csproj"
               }
             }
           }

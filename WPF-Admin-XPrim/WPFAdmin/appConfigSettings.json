@@ -7,7 +7,7 @@
   "auth": "IsEnabled",
   "autoOpenNavIndex": true,
   "Theme": "Light",
-  "AppName": "智能伺服压装机V2.0.0",
+  "AppName": "数据采集系统",
   "logDuration": 15,
   "OpenGarnet": true,
   "GarnetPort" : 9999,

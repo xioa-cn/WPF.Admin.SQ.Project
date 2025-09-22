@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "N1xGAB8LUg8=",
+  "dgSpecHash": "mqzk1dS+u6I=",
   "success": true,
-  "projectFilePath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\SharedMemoryDemoModules\\SharedMemoryDemoModules.csproj",
+  "projectFilePath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\SharedMemoryDemoModules\\SharedMemoryDemoModules.csproj",
   "expectedPackageFiles": [
     "D:\\nuget\\azure.core\\1.44.1\\azure.core.1.44.1.nupkg.sha512",
     "D:\\nuget\\azure.identity\\1.13.0\\azure.identity.1.13.0.nupkg.sha512",

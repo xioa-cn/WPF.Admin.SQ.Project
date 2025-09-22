@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-E:\项目\瞬驱\PressMachineSystem.AutoConfigSystem\WPF-Admin-XPrim\WPFAdmin\obj\Debug\net8.0-windows\
+E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\WPFAdmin\obj\Debug\net8.0-windows\
 WPFAdmin
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-E:\项目\瞬驱\PressMachineSystem.AutoConfigSystem\WPF-Admin-XPrim\WPFAdmin\App.xaml
+E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\WPFAdmin\App.xaml
 4-199308748
 1601533826
 232087901225
-443991996245
+443-695269930
 Views\ConfigWindow.xaml;Views\MainWindow.xaml;Views\NotifyIconView.xaml;Views\SplashScreen.xaml;
 
 False

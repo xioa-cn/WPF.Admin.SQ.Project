@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g550MQHBHCQ=",
+  "dgSpecHash": "sTixc9JUVEs=",
   "success": true,
-  "projectFilePath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\CMS.AppSettings\\CMS.AppSettings.csproj",
+  "projectFilePath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\CMS.AppSettings\\CMS.AppSettings.csproj",
   "expectedPackageFiles": [
     "D:\\nuget\\azure.core\\1.44.1\\azure.core.1.44.1.nupkg.sha512",
     "D:\\nuget\\azure.identity\\1.13.0\\azure.identity.1.13.0.nupkg.sha512",

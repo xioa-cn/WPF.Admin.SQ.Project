@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj": {}
+    "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj": {}
   },
   "projects": {
-    "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj": {
+    "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj",
+        "projectUniqueName": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj",
         "projectName": "WPF.SharedMemory",
-        "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj",
+        "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.SharedMemory\\WPF.SharedMemory.csproj",
         "packagesPath": "D:\\nuget",
-        "outputPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\WPF.SharedMemory\\obj\\",
+        "outputPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.SharedMemory\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\DevExpress 24.2\\Components\\Offline Packages",

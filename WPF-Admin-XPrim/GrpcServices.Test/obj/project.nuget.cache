@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JQccb41GWsU=",
+  "dgSpecHash": "x/9GEmo6Yo0=",
   "success": true,
-  "projectFilePath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\GrpcServices.Test\\GrpcServices.Test.csproj",
+  "projectFilePath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\GrpcServices.Test\\GrpcServices.Test.csproj",
   "expectedPackageFiles": [
     "D:\\nuget\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "D:\\nuget\\google.protobuf\\3.31.1\\google.protobuf.3.31.1.nupkg.sha512",

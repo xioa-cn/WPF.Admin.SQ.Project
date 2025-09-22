@@ -10,3 +10,15 @@ E:\项目\瞬驱\PressMachineSystem.AutoConfigSystem\WPF-Admin-XPrim\WPF.SharedM
 E:\项目\瞬驱\PressMachineSystem.AutoConfigSystem\WPF-Admin-XPrim\WPF.SharedMemory\obj\Debug\net8.0-windows\refint\WPF.SharedMemory.dll
 E:\项目\瞬驱\PressMachineSystem.AutoConfigSystem\WPF-Admin-XPrim\WPF.SharedMemory\obj\Debug\net8.0-windows\WPF.SharedMemory.pdb
 E:\项目\瞬驱\PressMachineSystem.AutoConfigSystem\WPF-Admin-XPrim\WPF.SharedMemory\obj\Debug\net8.0-windows\ref\WPF.SharedMemory.dll
+E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\WPF.SharedMemory\bin\Debug\net8.0-windows\WPF.SharedMemory.deps.json
+E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\WPF.SharedMemory\bin\Debug\net8.0-windows\WPF.SharedMemory.dll
+E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\WPF.SharedMemory\bin\Debug\net8.0-windows\WPF.SharedMemory.pdb
+E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\WPF.SharedMemory\obj\Debug\net8.0-windows\WPF.SharedMemory.GeneratedMSBuildEditorConfig.editorconfig
+E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\WPF.SharedMemory\obj\Debug\net8.0-windows\WPF.SharedMemory.AssemblyInfoInputs.cache
+E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\WPF.SharedMemory\obj\Debug\net8.0-windows\WPF.SharedMemory.AssemblyInfo.cs
+E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\WPF.SharedMemory\obj\Debug\net8.0-windows\WPF.SharedMemory.csproj.CoreCompileInputs.cache
+E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\WPF.SharedMemory\obj\Debug\net8.0-windows\WPF.SharedMemory.sourcelink.json
+E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\WPF.SharedMemory\obj\Debug\net8.0-windows\WPF.SharedMemory.dll
+E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\WPF.SharedMemory\obj\Debug\net8.0-windows\refint\WPF.SharedMemory.dll
+E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\WPF.SharedMemory\obj\Debug\net8.0-windows\WPF.SharedMemory.pdb
+E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\WPF.SharedMemory\obj\Debug\net8.0-windows\ref\WPF.SharedMemory.dll

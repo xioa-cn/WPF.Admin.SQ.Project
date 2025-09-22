@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\GrpcServices.Test\\GrpcServices.Test.csproj": {}
+    "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\GrpcServices.Test\\GrpcServices.Test.csproj": {}
   },
   "projects": {
-    "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\GrpcServices.Test\\GrpcServices.Test.csproj": {
+    "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\GrpcServices.Test\\GrpcServices.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\GrpcServices.Test\\GrpcServices.Test.csproj",
+        "projectUniqueName": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\GrpcServices.Test\\GrpcServices.Test.csproj",
         "projectName": "GrpcServices.Test",
-        "projectPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\GrpcServices.Test\\GrpcServices.Test.csproj",
+        "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\GrpcServices.Test\\GrpcServices.Test.csproj",
         "packagesPath": "D:\\nuget",
-        "outputPath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\GrpcServices.Test\\obj\\",
+        "outputPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\GrpcServices.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\DevExpress 24.2\\Components\\Offline Packages",
