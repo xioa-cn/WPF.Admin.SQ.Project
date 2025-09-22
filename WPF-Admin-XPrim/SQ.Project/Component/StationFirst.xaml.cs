@@ -1,5 +1,6 @@
-﻿using System.Windows.Controls;
+﻿using CommunityToolkit.Mvvm.Messaging;
 using SQ.Project.ViewModels;
+using System.Windows.Controls;
 
 namespace SQ.Project.Component
 {
@@ -9,6 +10,23 @@ namespace SQ.Project.Component
         {
             DataContext = viewModel;
             InitializeComponent();
+            WeakReferenceMessenger.Default.Register<ListViewScollerMessengerStationFirst>(this, ListViewGoToScollerBar);
+        }
+
+        private void ListViewGoToScollerBar(object recipient, ListViewScollerMessengerStationFirst message)
+        {
+            ListBox_Msg?.ScrollIntoView(message.GoText);
+        }
+    }
+
+    public class ListViewScollerMessengerStationFirst
+    {
+        public object GoText { get; set; }
+
+
+        public ListViewScollerMessengerStationFirst(object goText)
+        {
+            GoText = goText;
         }
     }
 }

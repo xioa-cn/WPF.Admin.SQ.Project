@@ -24,10 +24,10 @@ namespace SQ.Project.ViewModels
             Status = true;
             Code = "ACC20250922154660-00001";
 
-            Task.Factory.StartNew(TestMsg);
+            Task.Factory.StartNew(Test,TaskCreationOptions.LongRunning);
         }
 
-        private async void TestMsg()
+        private async Task Test()
         {
             int i = 0;
             while (true)
@@ -42,17 +42,17 @@ namespace SQ.Project.ViewModels
         {
             var content = DateTime.Now.ToString("MM/dd-hh:mm:ss") + ": " + message;
 
-            Task.Run(() =>
+            Task.Run((Action)(() =>
             {
-                DispatcherHelper.CheckBeginInvokeOnUI(() =>
+                DispatcherHelper.CheckBeginInvokeOnUI((Action)(() =>
                 {
                     if (Msg.Count > 500)
                         Msg.RemoveAt(0);
                     Msg.Add(content);
                     if (IsAutoScroll && Msg.Count > 1)
-                        WeakReferenceMessenger.Default.Send(new ListViewScollerMessenger(Msg[^1]));
-                });
-            });
+                        WeakReferenceMessenger.Default.Send(new ListViewScollerMessengerStationFirst((object)Msg[^1]));
+                }));
+            }));
 
             UserLogService.Instance?.LogInfo(message, "总线扫码");
         }
