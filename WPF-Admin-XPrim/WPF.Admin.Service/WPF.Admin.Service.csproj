@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\WPF.Admin.Models\WPF.Admin.Models.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Xioa.NAxios" Version="1.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Oracle.ManagedDataAccess">
+        <HintPath>C:\Users\Administrator\.nuget\packages\oracle.manageddataaccess.core\23.8.0\lib\net8.0\Oracle.ManagedDataAccess.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\garnet.rar" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\garnet.zip" />
+      <Resource Include="Resources\garnet.zip" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,353 @@
+{
+  "AppBaseOnName": "苏州通锦",
+  "AppCompanyName": "苏州通锦精密工业股份有限公司",
+  "AppName": "智能伺服压机",
+  "Permission": "权限:",
+  "Admin": "超级管理员",
+  "Engineer": "工程师",
+  "Employee": "操作员",
+  "Logout": "退出登录",
+  "MiniIcon": "最小化到托盘",
+  "Close": "关闭程序",
+  "btn": {
+    "Confirm": "确认",
+    "Cancel": "取消",
+    "Yes": "是",
+    "No": "否",
+    "Save": "保存",
+    "Submit": "提交",
+    "Refresh": "刷新",
+    "Search": "搜索",
+    "PageSize": "每页显示:",
+    "Add": "添加",
+    "AddUser": "添加用户",
+    "Edit": "编辑",
+    "Delete": "删除",
+    "Print": "打印",
+    "FirstPage": "首页",
+    "PreviousPage": "上一页",
+    "NextPage": "下一页",
+    "LastPage": "尾页",
+    "Write": "写 入",
+    "LookPlot": "查看曲线",
+    "Parameter": {
+      "Save": "保存本地",
+      "ReadLocal": "读取本地",
+      "DeleteLocal": "删除本地",
+      "UseLocal": "应用配方",
+      "ReadPlc": "读取PLC"
+    }
+  },
+  "SkipPage": {
+    "Page_Total": "页 / 共",
+    "Record_Total": "条记录",
+    "Page_General": "共",
+    "Page_Page": "页",
+    "Page_No": "第"
+  },
+  "Table": {
+    "Serial": "序号",
+    "DbSerial": "数据库序号",
+    "AlarmInfo": "报警信息",
+    "CreateTime": "创建时间",
+    "Type": "类型",
+    "ColumnName": "列名:",
+    "ColumnValue": "值:",
+    "Name": "名称",
+    "Password": "密码",
+    "Permission": "权限",
+    "Operation": "操作",
+    "Code": "条码",
+    "Result": "结果",
+    "AdditionalData": "附加数据"
+  },
+  "曲线界面": "曲线界面",
+  "操作界面": "操作界面",
+  "监控界面": "监控界面",
+  "配方管理": "配方管理",
+  "工装配置": "工装配置",
+  "条码特征": "条码特征",
+  "历史数据": "历史数据",
+  "数据查询": "数据查询",
+  "曲线查看": "曲线查看",
+  "报警记录": "报警记录",
+  "扫码交互": "扫码交互",
+  "Mes配置": "Mes配置",
+  "系统设置": "系统设置",
+  "用户管理": "用户管理",
+  "Login": {
+    "Login": "登录",
+    "UserName": "用户名",
+    "RememberPassword": "记住密码",
+    "Password": "密码",
+    "Account": "账户",
+    "NotFountUser": "没有找到用户！！",
+    "PasswordError": "密码错误！！"
+  },
+  "Page": {
+    "PageDisplayed": "页面正在显示",
+    "PageNotFound": "没有找到页面"
+  },
+  "Growl": {
+    "SuccessGlobal": "操作成功",
+    "ErrorGlobal": "操作失败"
+  },
+  "Msg": {
+    "Title_Hint": "提示",
+    "Rule": {
+      "ValidFigure": "请输入有效的数字",
+      "ParameterRange": "参数范围"
+    },
+    "PreSystem": {
+      "IP_Error": "IP地址错误！无法保存",
+      "Com_Error": "Com口错误！无法保存",
+      "SaveSuccess": "保存成功,部分操作将在重启后生效",
+      "SelectDataFile": "请选择数据文件",
+      "SelectFileError": "文件选择错误",
+      "DeleteDb": "请确认是否初始化压装数据库\\n将删除所有历史压装记录！",
+      "DeleteDbSuccess": "初始化压装数据库成功"
+    },
+    "MesChecked": {
+      "FormatError": "格式化失败，请检查输入内容是否正确！"
+    },
+    "ParameterContent": {
+      "Insertion": "请先选择一行进行插入",
+      "Delete": "请先选择一行进行删除"
+    }
+  },
+  "Abnormal": {
+    "Alarm": "报警中",
+    "Normal": "无异常"
+  },
+  "ShaftPosition": {
+    "XShaft": "X轴坐标:",
+    "YShaftTop": "Y轴上限:",
+    "YShaftBottom": "Y轴下限:"
+  },
+  "Run": {
+    "Run": "运行中",
+    "Stop": "停止中"
+  },
+  "RunMode": {
+    "AutoMode": "自动模式",
+    "ManualMode": "手动模式"
+  },
+  "Record": {
+    "Record": "记录中",
+    "Stop": "停止中"
+  },
+  "Trigger": {
+    "Trigger": "触发中",
+    "Stop": "不在点位"
+  },
+  "Elf": {
+    "Click": "点我操作",
+    "Close": "关闭精灵"
+  },
+  "Tooling": {
+    "ToolingFormulaBinding": "工装配方绑定",
+    "BarcodeEntryForWorkwear": "工装条码录入"
+  },
+  "Detection": {
+    "Front_EndDetection": "前段检测",
+    "DataUpload": "数据上传"
+  },
+  "User": {
+    "TipDelUser": "请确认删除此用户：",
+    "AdminDel": "Admin账户不能删除！！",
+    "AdminEdit": "Admin 账户权限不能修改",
+    "DelSuccess": "删除成功！！",
+    "Edit_UserInfoNull": "用户信息不能为空！！",
+    "Edit_PasswordNull": "密码不能为空！！",
+    "UserInfoErrorNotEdit": "用户信息异常无法更改！！",
+    "AccountExist": "账户已存在！！"
+  },
+  "MonitorType": {
+    "BottomInRightOut": "下进右出",
+    "BottomInNoOut": "下进不出",
+    "BottomInBottomOut": "下进下出",
+    "LeftInTopOut": "左进上出",
+    "LeftInRightOut": "左进右出",
+    "LeftInRightNoOut": "左进右不出"
+  },
+  "Parameter": {
+    "Name": "配方名称:",
+    "Used": "当前使用配方:",
+    "Content": "配方内容"
+  },
+  "ParametersBoolean": {
+    "Open": "启用",
+    "Close": "屏蔽"
+  },
+  "Save": {
+    "Error": "保存失败",
+    "ErrorMsg": "保存出错",
+    "Success": "保存成功"
+  },
+  "Home": {
+    "CodeResult": "扫码结果:",
+    "DelCode": "删除扫码结果",
+    "CurrentFormula": "当前配方:",
+    "BindingCode": "绑定条码:",
+    "PlotName": "名称:"
+  },
+  "Manual": {
+    "Status": "状态值",
+    "Monitor": "监控值",
+    "Parameter": "参数值",
+    "Operation": "操作按钮"
+  },
+  "History": {
+    "SingleFileLoading": "单文件加载",
+    "MultiFileLoading": "多文件加载",
+    "PrintCurve": "打印曲线",
+    "SelectFile": "选择文件",
+    "SelectTestFile": "选择测试文件",
+    "FileError": "文件加载失败"
+  },
+  "PreSystem": {
+    "SystemSetting": "系统设置",
+    "DataFile": "数据路径:",
+    "InitializedPressMachineDb": "初始化压装数据库",
+    "Browse": "浏览..."
+  },
+  "Print": {
+    "Press_fittingReport": "压装报告",
+    "ProductName": "产品名称:",
+    "Code": "产品条码:",
+    "Result": "压装结果:",
+    "InflectionPos": "拐点位置:",
+    "InflectionPre": "拐点压力:",
+    "PrintDate": "打印日期:",
+    "Signature": "签名:"
+  },
+  "BarcodeCharacteristics": {
+    "CheckCode": "是否开启条码内容校验:",
+    "MainCodeRule": "主体码规则:",
+    "AddParkCode": "添加零件码",
+    "ParkCodeRule": "零件码规则",
+    "WriteRule": "请输入规则",
+    "IfDelete": "是否删除",
+    "Rule": "规则"
+  },
+  "CheckCode": {
+    "CheckCodeParameterNow": "当前使用配方:",
+    "Header": "配方内容",
+    "MainToken": "主码令牌",
+    "MainFeature": "主码特征:",
+    "PartToken": "零件码令牌",
+    "PartFeature": "零件码特征:"
+  },
+  "EnvelopeLine": {
+    "OpenFile": "打开文件",
+    "ResetData": "重置数据",
+    "Offset": "偏移量:",
+    "FrequencyPointSelection": "取点频次",
+    "SaveData": "保存数据",
+    "RefreshData": "刷新数据",
+    "AddPoint": "添加点位",
+    "OpenLine": "启用包络线",
+    "OpenTop": "启用上限位",
+    "OpenBottom": "启用下限位",
+    "AddValue": "添加点位",
+    "FileImport": "文件导入",
+    "OpenPreview": "打开预览",
+    "ClosePreview": "关闭预览",
+    "ClearData": "清空数据",
+    "Limit": {
+      "X": "限位X轴点:",
+      "Y1": "上限Y轴点:",
+      "Y2": "下限Y轴点:"
+    }
+  },
+  "ParametersContent": {
+    "PlotJudge": "曲线判断",
+    "JudgeTable": {
+      "Name": "名称",
+      "Type": "类型",
+      "PositionLow": "位置下限",
+      "PositionHigh": "位置上限",
+      "PressureLow": "压力下限",
+      "PressureHigh": "压力上限",
+      "AddWindow": "添加窗口",
+      "DeleteWindow": "删除窗口",
+      "InsertWindow": "插入窗口",
+      "ClearWindow": "清空窗口"
+    },
+    "EnvelopeLine": "包络线",
+    "VisibleArea": "可视区域",
+    "Limit": {
+      "XLow": "X轴下限:",
+      "XHigh": "X轴上限:",
+      "YLow": "Y轴下限:",
+      "YHigh": "Y轴上限:"
+    }
+  },
+  "MesChecked": {
+    "RequestMethod": "请求方法:",
+    "SendTestRequest": "发送测试请求",
+    "RequestUrl": "请求地址:",
+    "RequestContent": "请求内容:",
+    "FormattedContent": "格式化内容",
+    "MessageContent": "报文内容:",
+    "DeleteMessage": "删除报文日志",
+    "AddRequestHeader": "添加请求头"
+  },
+  "Workwear": {
+    "WorkwearCode": "工装条码:",
+    "WorkwearName": "工装名称:",
+    "BindingParameter": "绑定配方:"
+  },
+  "MesDb": {
+    "DbType": "数据库类型:",
+    "TestWrite": "测试写入",
+    "ConnectString": "数据库连接:",
+    "Sql": "数据库语句:"
+  },
+  "Signal": {
+    "ComPort": "串口号:",
+    "ComBaudRate": "波特率:",
+    "ComDataBits": "数据位:",
+    "ComStopBits": "停止位:",
+    "ComParity": "校验位:",
+    "Code": "信号编码",
+    "Plc": "PLC映射",
+    "Position": "地址",
+    "value": "值",
+    "AutoConnect": "自动连接",
+    "Msg": {
+      "DeleteMsg": "请确认删除",
+      "DeleteError": "删除错误,未找到数据源映射",
+      "AddModel" : "添加信号模型",
+      "CodeError": "信号编码不能为空",
+      "PositionError": "信号地址不能为空",
+      "ValueError": "信号值不能为空",
+      "PlcError": "PLC映射不能为空",
+      "CodeExist": "信号编码已存在"
+    }
+  },
+  "Window": {
+    "Title": {
+      "EditUserMessageWindow": "用户信息编辑界面",
+      "Real_timeAlarm": "实时报警",
+      "PrintCurve": "打印曲线(测试版)",
+      "PlotImport": "曲线导入"
+    }
+  },
+  "Loading": "加载中...",
+  "AppErrorNotFoundVM": "程序内部异常,没有找到视图模型控制器",
+  "UserParameters": {
+  },
+  "ParametersHeader": {
+  },
+  "PlotHeader": {
+  },
+  "ManualIo": {
+  },
+  "ManualNumerical": {
+  },
+  "ManualBtn": {
+  },
+  "ManualParameter": {
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "f45PDUSEdKQ=",
+  "success": true,
+  "projectFilePath": "E:\\项目\\瞬驱\\PressMachineSystem.AutoConfigSystem\\WPF-Admin-XPrim\\HttpRequest.Test\\HttpRequest.Test.csproj",
+  "expectedPackageFiles": [
+    "D:\\nuget\\microsoft.aspnetcore.openapi\\9.0.4\\microsoft.aspnetcore.openapi.9.0.4.nupkg.sha512",
+    "D:\\nuget\\microsoft.extensions.apidescription.server\\8.0.0\\microsoft.extensions.apidescription.server.8.0.0.nupkg.sha512",
+    "D:\\nuget\\microsoft.openapi\\1.6.23\\microsoft.openapi.1.6.23.nupkg.sha512",
+    "D:\\nuget\\swashbuckle.aspnetcore\\9.0.1\\swashbuckle.aspnetcore.9.0.1.nupkg.sha512",
+    "D:\\nuget\\swashbuckle.aspnetcore.swagger\\9.0.1\\swashbuckle.aspnetcore.swagger.9.0.1.nupkg.sha512",
+    "D:\\nuget\\swashbuckle.aspnetcore.swaggergen\\9.0.1\\swashbuckle.aspnetcore.swaggergen.9.0.1.nupkg.sha512",
+    "D:\\nuget\\swashbuckle.aspnetcore.swaggerui\\9.0.1\\swashbuckle.aspnetcore.swaggerui.9.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

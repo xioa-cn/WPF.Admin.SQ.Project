@@ -1,0 +1,198 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style TargetType="Page">
+        <Setter Property="Background" Value="{DynamicResource Background.Brush}" />
+    </Style>
+    <Style TargetType="UserControl">
+        <Setter Property="Background" Value="{DynamicResource Background.Brush}" />
+    </Style>
+    <Style TargetType="TextBlock">
+        <Setter Property="Foreground" Value="{DynamicResource Text.Primary.Brush}" />
+    </Style>
+    <Style TargetType="TextBox">
+        <Setter Property="Foreground" Value="{DynamicResource Text.Primary.Brush}" />
+        <Setter Property="Background" Value="{DynamicResource Background.Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource Border.Brush}" />
+    </Style>
+    <Style TargetType="ComboBox">
+        <Setter Property="Foreground" Value="{DynamicResource Text.Primary.Brush}" />
+        <Setter Property="Background" Value="{DynamicResource Background.Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource Border.Brush}" />
+    </Style>
+    <Style TargetType="Button">
+        <Setter Property="Background" Value="{DynamicResource Background.Brush}" />
+    </Style>
+    <Style TargetType="Border">
+        <Setter Property="Background" Value="{DynamicResource Background.Brush}" />
+    </Style>
+
+    <Style TargetType="ToolTip">
+        <Setter Property="Background" Value="{DynamicResource Background.Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource Text.Primary.Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource Border.Brush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Padding" Value="8" />
+        <Setter Property="ToolTipService.InitialShowDelay" Value="200" />
+        <Setter Property="ToolTipService.ShowDuration" Value="5000" />
+    </Style>
+    <Style TargetType="DataGridColumnHeader">
+        <Setter Property="Background" Value="{DynamicResource Surface.Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource Text.Primary.Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource Border.Brush}" />
+        <Setter Property="BorderThickness" Value="0,0,1,1" />
+        <Setter Property="Padding" Value="10" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <!-- <Setter Property="ToolTip" Value="{Binding RelativeSource={RelativeSource Self}, Path=Content.Text}" /> -->
+    </Style>
+
+    <Style TargetType="DataGridCell">
+        <Setter Property="Foreground" Value="{DynamicResource Text.Primary.Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource Border.Brush}" />
+        <Setter Property="BorderThickness" Value="0,0,1,0" />
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="DataGridCell">
+                    <Border
+                        x:Name="Border"
+                        Padding="{TemplateBinding Padding}"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource Primary.Brush}" />
+                            <Setter Property="Foreground" Value="{DynamicResource Text.Primary.Brush}" />
+                            <Setter TargetName="Border" Property="Background" Value="{DynamicResource Primary.Brush}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource Background.Secondary.Brush}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="cell" TargetType="DataGridCell">
+        <Setter Property="Foreground" Value="{DynamicResource Text.Primary.Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource Border.Brush}" />
+        <Setter Property="BorderThickness" Value="0,0,1,0" />
+        <Setter Property="Padding" Value="10" />
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="DataGridCell">
+                    <Border
+                        x:Name="Border"
+                        Padding="{TemplateBinding Padding}"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource Primary.Brush}" />
+                            <Setter Property="Foreground" Value="{DynamicResource Text.Primary.Brush}" />
+                            <Setter TargetName="Border" Property="Background" Value="{DynamicResource Primary.Brush}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource Background.Secondary.Brush}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="TabControl" TargetType="TabControl">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TabControl">
+                    <Grid
+                        x:Name="templateRoot"
+                        ClipToBounds="true"
+                        KeyboardNavigation.TabNavigation="Local"
+                        SnapsToDevicePixels="true">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition x:Name="ColumnDefinition0" />
+                            <ColumnDefinition x:Name="ColumnDefinition1" Width="0" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition x:Name="RowDefinition0" Height="Auto" />
+                            <RowDefinition x:Name="RowDefinition1" Height="*" />
+                        </Grid.RowDefinitions>
+                        <ScrollViewer
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            HorizontalScrollBarVisibility="Auto"
+                            VerticalScrollBarVisibility="Disabled">
+                            <TabPanel
+                                x:Name="headerPanel"
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Margin="2,2,2,0"
+                                Panel.ZIndex="1"
+                                Background="Transparent"
+                                IsItemsHost="true"
+                                KeyboardNavigation.TabIndex="1" />
+                        </ScrollViewer>
+                        <Border
+                            x:Name="contentPanel"
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            KeyboardNavigation.DirectionalNavigation="Contained"
+                            KeyboardNavigation.TabIndex="2"
+                            KeyboardNavigation.TabNavigation="Local">
+                            <ContentPresenter
+                                x:Name="PART_SelectedContentHost"
+                                Margin="{TemplateBinding Padding}"
+                                ContentSource="SelectedContent"
+                                SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="TabItemStyle" TargetType="TabItem">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TabItem">
+                    <StackPanel
+                        Margin="20,10,0,0"
+                        VerticalAlignment="Center"
+                        Cursor="Hand">
+                        <TextBlock
+                            x:Name="text"
+                            FontSize="12"
+                            Foreground="{DynamicResource Text.Secondary.Brush}"
+                            Text="{TemplateBinding Header}" />
+                        <Border
+                            x:Name="border"
+                            Height="3"
+                            Margin="5,5,5,0"
+                            Background="Transparent"
+                            CornerRadius="1" />
+                    </StackPanel>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="text" Property="Foreground" Value="{DynamicResource Text.Primary.Brush}" />
+                        </Trigger>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter TargetName="text" Property="FontWeight" Value="Bold" />
+                            <Setter TargetName="text" Property="FontSize" Value="15" />
+                            <Setter TargetName="border" Property="Background" Value="{DynamicResource Border.Brush}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

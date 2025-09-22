@@ -1,0 +1,110 @@
+﻿<Page
+    x:Class="PressMachineMainModeules.Views.PreHisPlot"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:i18n="clr-namespace:WPF.Admin.Themes.I18n;assembly=WPF.Admin.Themes"
+    xmlns:local="clr-namespace:PressMachineMainModeules.Views"
+    xmlns:lottie="clr-namespace:LottieSharp.WPF;assembly=LottieSharp"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:oxy="http://oxyplot.org/wpf"
+    xmlns:vm="clr-namespace:PressMachineMainModeules.ViewModels"
+    xmlns:xi="clr-namespace:WPF.Admin.Themes;assembly=WPF.Admin.Themes"
+    Title="PreHisPlot"
+    d:DataContext="{d:DesignInstance Type=vm:PreHisPlotViewModel}"
+    mc:Ignorable="d">
+
+    <Border>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <StackPanel>
+                <Button
+                    Width="100"
+                    Margin="0,10"
+                    VerticalAlignment="Top" 
+                    Content="{i18n:Localize History.SingleFileLoading}"
+                    BorderBrush="{DynamicResource Primary.Brush}"
+                    Command="{Binding SelectCommand}"
+                    Style="{StaticResource ButtonSuccess}">
+                </Button>
+                <Button
+                    Width="100"
+                    Margin="0,10"
+                    VerticalAlignment="Top"
+                    Content="{i18n:Localize History.MultiFileLoading}"
+                    BorderBrush="{DynamicResource Primary.Brush}"
+                    Command="{Binding SelectMoreCommand}"
+                    Style="{StaticResource ButtonSuccess}">
+                </Button>
+
+                <Button
+                    Width="100"
+                    Margin="0,10"
+                    VerticalAlignment="Top"
+                    Content="{i18n:Localize History.PrintCurve}"
+                    BorderBrush="{DynamicResource Primary.Brush}"
+                    Command="{Binding PrintCommand}"
+                    Style="{StaticResource ButtonSuccess}">
+                </Button>
+
+            </StackPanel>
+            <oxy:PlotView
+                Name="ContentPlotView"
+                Grid.Row="0"
+                Grid.Column="1"
+                Background="Transparent"
+                Model="{Binding PlotModel}" />
+
+            <StackPanel
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="2">
+
+                <TextBlock
+                    FontSize="20"
+                    Foreground="{DynamicResource Primary.Brush}"
+                    Text="{Binding PathFile}"
+                    TextWrapping="Wrap" />
+            </StackPanel>
+
+            <xi:XioaMasks
+                x:Name="XioaMasksView"
+                Grid.RowSpan="2"
+                Grid.ColumnSpan="2"
+                Background="{DynamicResource Surface.Brush}"
+                BackgroundOpacity="0.85"
+                Loadings="{i18n:Localize Loading}">
+                <xi:XioaMasks.Resources>
+                    <Style x:Key="Load" TargetType="ContentControl">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate>
+                                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <lottie:LottieAnimationView
+                                            x:Name="PART_Lottie"
+                                            Width="380"
+                                            Height="500"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            AutoPlay="True"
+                                            FileName="./assets/下载加载.json"
+                                            RepeatCount="-1" />
+                                    </StackPanel>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </xi:XioaMasks.Resources>
+            </xi:XioaMasks>
+        </Grid>
+
+
+    </Border>
+</Page>

@@ -1,0 +1,130 @@
+﻿<Window
+    x:Class="PressMachineMainModeules.Views.PrintView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:i18n="clr-namespace:WPF.Admin.Themes.I18n;assembly=WPF.Admin.Themes"
+    xmlns:local="clr-namespace:PressMachineMainModeules.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:oxy="http://oxyplot.org/wpf"
+    xmlns:vm="clr-namespace:PressMachineMainModeules.ViewModels"
+    Title="{i18n:Localize Window.Title.PrintCurve}"
+    Width="630"
+    Height="800"
+    FontWeight="Bold"
+    ResizeMode="NoResize"
+    mc:Ignorable="d">
+    <Window.DataContext>
+        <vm:PrintViewModel />
+    </Window.DataContext>
+    <Border>
+        <Grid Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Button
+                Width="200"
+                Content="{i18n:Localize btn.Print}"
+                Command="{Binding PrintCommand}"
+                CommandParameter="{Binding ElementName=PrintObject}">
+            </Button>
+
+            <Viewbox Grid.Row="1" Stretch="Fill">
+                <Border
+                    Width="21cm"
+                    Height="29.7cm"
+                    Margin="16"
+                    BorderBrush="LightGray"
+                    BorderThickness="1">
+                    <Grid Name="PrintObject" Background="#FFF">
+                        <Grid Margin="36">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Grid Grid.Row="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <StackPanel Grid.Row="0" Margin="0,0,0,20">
+
+                                    <TextBlock
+                                        HorizontalAlignment="Center"
+                                        FontFamily="fangsong"
+                                        FontSize="22"
+                                        FontWeight="Bold"
+                                        Foreground="Black"
+                                        Text="{i18n:Localize Print.Press_fittingReport}" />
+
+                                    <StackPanel Margin="0,20,0,0" Orientation="Horizontal">
+                                        <TextBlock Foreground="Black" Text="{i18n:Localize Print.ProductName}" />
+                                        <TextBlock
+                                            Margin="10,0,0,0"
+                                            Foreground="Black"
+                                            Text="{Binding ProductName}" />
+                                    </StackPanel>
+                                    <StackPanel Margin="0,5,0,0" Orientation="Horizontal">
+                                        <TextBlock Foreground="Black" Text="{i18n:Localize Print.Code}" />
+                                        <TextBlock
+                                            Margin="10,0,0,0"
+                                            Foreground="Black"
+                                            Text="{Binding Code}" />
+                                    </StackPanel>
+                                    <StackPanel Margin="0,5,0,0" Orientation="Horizontal">
+                                        <TextBlock Foreground="Black" Text="{i18n:Localize Print.Result}" />
+                                        <TextBlock
+                                            Margin="10,0,0,0"
+                                            Foreground="Black"
+                                            Text="{Binding Result}" />
+                                    </StackPanel>
+                                    <StackPanel Margin="0,5,0,0" Orientation="Horizontal">
+                                        <TextBlock Foreground="Black" Text="{i18n:Localize Print.InflectionPos}" />
+                                        <TextBlock
+                                            Margin="10,0,0,0"
+                                            Foreground="Black"
+                                            Text="{Binding InflectionPos}" />
+                                    </StackPanel>
+                                    <StackPanel Margin="0,5,0,0" Orientation="Horizontal">
+                                        <TextBlock Foreground="Black" Text="{i18n:Localize Print.InflectionPre}" />
+                                        <TextBlock
+                                            Margin="10,0,0,0"
+                                            Foreground="Black"
+                                            Text="{Binding InflectionPre}" />
+                                    </StackPanel>
+                                </StackPanel>
+
+                                <oxy:PlotView
+                                    Grid.Row="1"
+                                    Margin="10"
+                                    Model="{Binding PlotModel}" />
+
+                                <StackPanel Grid.Row="2" Margin="0,20,0,40">
+                                    <StackPanel Margin="0,5,0,0" Orientation="Horizontal">
+                                        <TextBlock Foreground="Black" Text="{i18n:Localize Print.PrintDate}" />
+                                        <TextBlock
+                                            Margin="10,0,0,0"
+                                            Foreground="Black"
+                                            Text="{Binding PrintDateTime, StringFormat={}{0:yyyy-MM-dd HH:mm:ss}}" />
+                                    </StackPanel>
+
+                                    <TextBlock
+                                        Margin="0,10,0,0"
+                                        Foreground="Black"
+                                        Text="{i18n:Localize Print.Signature}" />
+
+                                </StackPanel>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Border>
+
+            </Viewbox>
+            <Grid Grid.Row="1" />
+        </Grid>
+    </Border>
+</Window>

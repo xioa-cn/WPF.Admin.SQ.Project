@@ -1,0 +1,17 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "GrpcServices";
+
+package normal;
+
+service NormalTestGrpcServer{
+    rpc Test(TestRequest) returns (TestResponse);
+}
+
+message TestRequest{
+    string Request = 1;
+}
+
+message TestResponse{
+    string state = 1;
+}

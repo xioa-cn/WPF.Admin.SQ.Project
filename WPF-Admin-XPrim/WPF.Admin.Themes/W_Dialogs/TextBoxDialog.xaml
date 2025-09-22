@@ -1,0 +1,67 @@
+﻿<UserControl
+    x:Class="WPF.Admin.Themes.W_Dialogs.TextBoxDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WPF.Admin.Themes.W_Dialogs"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DataContext="{d:DesignInstance Type=local:TextBoxDialogViewModel}"
+    mc:Ignorable="d">
+    <Border Width="300" CornerRadius="10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+            <Grid
+                Grid.Row="0"
+                Margin="20"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Border
+                    Grid.Row="0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top">
+                    <TextBlock Text="{Binding Title, FallbackValue=Title}" TextWrapping="Wrap" />
+                </Border>
+                <StackPanel Grid.Row="1" Margin="0,10">
+
+                    <TextBox
+                        Width="200"
+                        Margin="0,10"
+                        VerticalAlignment="Center"
+                        Text="{Binding InputText}" />
+
+                </StackPanel>
+            </Grid>
+            <StackPanel
+                Grid.Row="1"
+                Margin="20,10,20,20"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Orientation="Horizontal">
+                <ItemsControl ItemsSource="{Binding Buttons}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel HorizontalAlignment="Right" Orientation="Horizontal" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Button
+                                Margin="5"
+                                Command="{Binding Command}"
+                                Content="{Binding Text}"
+                                Style="{StaticResource ButtonSuccess}" />
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </Grid>
+    </Border>
+</UserControl>

@@ -1,0 +1,191 @@
+﻿<Window
+    x:Class="WPFAdmin.NavigationModules.Views.WindowBase"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:hc="https://handyorg.github.io/handycontrol"
+    xmlns:local="clr-namespace:WPFAdmin.NavigationModules.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:nav="clr-namespace:XPrism.Core.Navigations;assembly=XPrism.Core"
+    xmlns:region="clr-namespace:WPF.Admin.Models.Models;assembly=WPF.Admin.Models"
+    xmlns:vm="clr-namespace:WPFAdmin.NavigationModules.ViewModel"
+    xmlns:xPrism="clr-namespace:XPrism.Core.DataContextWindow;assembly=XPrism.Core"
+    xmlns:controls="clr-namespace:WPF.Admin.Themes.Controls;assembly=WPF.Admin.Themes"
+    xmlns:system="clr-namespace:System;assembly=System.Runtime"
+    Title="WindowBase"
+    Width="800"
+    Height="450"
+    AllowsTransparency="True"
+    Background="{x:Null}"
+    ResizeMode="CanResizeWithGrip"
+    WindowStartupLocation="CenterScreen"
+    WindowStyle="None"
+    mc:Ignorable="d">
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="50" GlassFrameThickness="1" />
+    </WindowChrome.WindowChrome>
+    <Window.Style>
+        <Style TargetType="{x:Type Window}">
+            <Setter Property="FontFamily" Value="Microsoft YaHei" />
+            <Setter Property="FontWeight" Value="ExtraLight" />
+            <Setter Property="MaxHeight"
+                    Value="{Binding Source={x:Static SystemParameters.WorkArea}, Path=Height, Converter={StaticResource ConvertToDouble}}" />
+            <Setter Property="MaxWidth"
+                    Value="{Binding Source={x:Static SystemParameters.WorkArea}, Path=Width, Converter={StaticResource ConvertToDouble}}" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Window}">
+                        <hc:Watermark Mark="Xioa.Admin">
+                            <Border Background="Transparent">
+                                <controls:AniGrid
+                                    MainColor="Red"
+                                    OpenAni="{Binding Source={x:Static region:AppSettings.Default}, Path=OpenAniGrid}"
+                                    RandomColor="True"
+                                    Scale="0.02">
+                                    <controls:AniGrid.GridPath>
+                                        <system:String>
+                                            M512 181.12l83.626667 169.386667a85.333333 85.333333 0 0 0 64 46.72l187.093333 27.306666-135.466667 131.84a85.333333 85.333333 0 0 0-24.533333 75.733334l31.786667 186.24-167.253334-87.893334a85.333333 85.333333 0 0 0-79.36 0l-167.466666 87.893334 32-186.24a85.333333 85.333333 0 0 0-24.533334-75.733334L177.066667 424.32l186.88-27.093333a85.333333 85.333333 0 0 0 64-46.72L512 181.12m0-42.666667a42.666667 42.666667 0 0 0-38.4 23.68l-83.626667 169.386667a42.666667 42.666667 0 0 1-32.213333 23.466667L170.666667 382.08a42.666667 42.666667 0 0 0-23.466667 72.96l135.253333 132.053333a42.666667 42.666667 0 0 1 12.373334 37.76L262.826667 810.666667a42.666667 42.666667 0 0 0 42.666666 50.133333 43.733333 43.733333 0 0 0 20.053334-5.12L492.16 768a42.666667 42.666667 0 0 1 39.68 0l167.253333 87.893333a43.733333 43.733333 0 0 0 20.053334 5.12 42.666667 42.666667 0 0 0 42.666666-50.133333l-32-186.24a42.666667 42.666667 0 0 1 12.373334-37.76l135.253333-132.053333A42.666667 42.666667 0 0 0 853.333333 382.08l-186.88-27.093333a42.666667 42.666667 0 0 1-32.213333-23.466667L550.4 162.133333A42.666667 42.666667 0 0 0 512 138.453333z
+                                        </system:String>
+                                    </controls:AniGrid.GridPath>
+                                    <Grid>
+                                        <Border
+                                            x:Name="MainBorder"
+                                            Margin="5"
+                                            Background="{DynamicResource Background.Brush}"
+                                            BorderBrush="{DynamicResource Primary.Brush}"
+                                            BorderThickness="2"
+                                            CornerRadius="8">
+                                            <Border.Effect>
+                                                <DropShadowEffect
+                                                    BlurRadius="5"
+                                                    Direction="0"
+                                                    Opacity="0.3"
+                                                    ShadowDepth="0"
+                                                    Color="Gray" />
+                                            </Border.Effect>
+                                            <Grid>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="auto" />
+                                                    <RowDefinition Height="*" />
+
+                                                </Grid.RowDefinitions>
+
+                                                <WrapPanel
+                                                    Grid.Row="0"
+                                                    Margin="10,0,10,0"
+                                                    VerticalAlignment="Center">
+                                                    <!--<Image
+                                            Width="32"
+                                            Height="32"
+                                            Source="{StaticResource logo}" />-->
+                                                    <Path
+                                                        Width="22"
+                                                        Height="22"
+                                                        Data="{StaticResource logo1}"
+                                                        Fill="{DynamicResource Primary.Brush}"
+                                                        Stretch="Uniform" />
+
+                                                    <TextBlock
+                                                        Margin="10,0,0,0"
+                                                        VerticalAlignment="Center"
+                                                        FontWeight="Bold"
+                                                        Foreground="{DynamicResource Text.Primary.Brush}"
+                                                        Text="{TemplateBinding Title}" />
+                                                </WrapPanel>
+
+                                                <WrapPanel
+                                                    Grid.Row="0"
+                                                    Margin="10,0,10,0"
+                                                    HorizontalAlignment="Right"
+                                                    VerticalAlignment="Stretch">
+                                                    <Button
+                                                        Width="30"
+                                                        Height="30"
+                                                        VerticalAlignment="Stretch"
+                                                        Click="MiniSize_Click"
+                                                        Style="{DynamicResource WindowMaxButtonStyle}">
+                                                        <Path
+                                                            Data="{StaticResource MiniIco}"
+                                                            Fill="{DynamicResource Text.Primary.Brush}"
+                                                            Stretch="Fill" />
+                                                    </Button>
+                                                    <Button
+                                                        Width="30"
+                                                        Height="30"
+                                                        VerticalAlignment="Stretch"
+                                                        Click="BackWindow_Click"
+                                                        Style="{DynamicResource WindowMaxButtonStyle}">
+                                                        <Path
+                                                            Data="{StaticResource Eject}"
+                                                            Fill="{DynamicResource Text.Primary.Brush}"
+                                                            Stretch="Fill" />
+
+                                                    </Button>
+
+                                                    <Button
+                                                        Width="30"
+                                                        Height="30"
+                                                        VerticalAlignment="Stretch"
+                                                        Click="MaxSize_Click"
+                                                        Style="{DynamicResource WindowMaxButtonStyle}">
+                                                        <Path
+                                                            Data="{StaticResource MaxIco}"
+                                                            Fill="{DynamicResource Text.Primary.Brush}"
+                                                            Stretch="Fill" />
+                                                    </Button>
+
+                                                    <Button
+                                                        Width="30"
+                                                        Height="30"
+                                                        VerticalAlignment="Stretch"
+                                                        Click="Close_Click"
+                                                        Style="{DynamicResource WindowCloseButtonStyle}">
+                                                        <Path
+                                                            Data="{StaticResource CloseIco}"
+                                                            Fill="{DynamicResource Text.Primary.Brush}"
+                                                            Stretch="Fill" />
+                                                    </Button>
+                                                </WrapPanel>
+                                                <Grid Grid.Row="1">
+                                                    <ContentPresenter />
+                                                </Grid>
+                                            </Grid>
+                                        </Border>
+                                        <Border
+                                            x:Name="AlertBorder"
+                                            Margin="5"
+                                            Background="Red"
+                                            CornerRadius="8"
+                                            IsHitTestVisible="False"
+                                            Opacity="0"
+                                            Visibility="{Binding Source={x:Static vm:MainAlarmViewModel.Main}, Path=IsAlertActive, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                            <Border.Triggers>
+                                                <EventTrigger RoutedEvent="Border.Loaded">
+                                                    <BeginStoryboard>
+                                                        <Storyboard RepeatBehavior="Forever">
+                                                            <DoubleAnimation
+                                                                AutoReverse="True"
+                                                                Storyboard.TargetProperty="Opacity"
+                                                                From="0"
+                                                                To="0.4"
+                                                                Duration="0:0:0.5" />
+                                                        </Storyboard>
+                                                    </BeginStoryboard>
+                                                </EventTrigger>
+                                            </Border.Triggers>
+                                        </Border>
+                                    </Grid>
+                                </controls:AniGrid>
+                            </Border>
+                        </hc:Watermark>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Style>
+    <AdornerDecorator>
+        <Grid Margin="5">
+            <ContentControl Name="ContentControl" />
+        </Grid>
+    </AdornerDecorator>
+</Window>

@@ -1,0 +1,22 @@
+﻿{
+  "Routers": [
+    {
+      "key": "RouterSettings",
+      "content": "RouterSettings",
+      "page": "RouterSettings",
+      "icon": "SystemInfo"
+    },
+    {
+      "key": "VisualSettings",
+      "content": "VisualSettings",
+      "page": "VisualSettings",
+      "icon": "SystemInfo"
+    },
+    {
+      "key": "PlcSettings",
+      "content": "PlcSettings",
+      "page": "PlcSettings",
+      "icon": "SystemInfo"
+    }
+  ]
+}

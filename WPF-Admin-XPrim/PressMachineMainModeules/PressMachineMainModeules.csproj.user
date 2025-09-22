@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="Components\AutoEnvelopeLineWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\AutoParametersContentView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\AutoPlotView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\ManaulStateUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\Manual2IoPointDialogView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\Manual2NumericalValueDialogView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\Manual2OperationDialogView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\Manual2ParameterView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\ManualEnvelopeLineView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\PressMachineDrawingMainView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\PressMachineManualAreaView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\PressMachineManualButtonsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\PressMachineManualStatusView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\PressMachineParamstersView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\PressMachineSidesParamsterView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\PressMachineVisionAreaView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\PressMachineWayParamsterView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\PressMachineXParamsterView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\PrssMachineCommonParamsterView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Helper\PosintModelDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AutoHomeView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AutoParameterPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Elf\WindowScreenElf.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\IoManagerPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ManualWriteWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PreHisPlot.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PreHisTable.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PreManual.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PreManual2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PreParams.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PreSystemManager.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PrintView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Components\ManaulStateUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\PressMachineDrawingMainView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\PressMachineManualAreaView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\PressMachineManualStatusView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\PressMachineParamstersView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\PressMachineSidesParamsterView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\PressMachineVisionAreaView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\PressMachineWayParamsterView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\PrssMachineCommonParamsterView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Elf\WindowScreenElf.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ManualButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ManualWriteWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PreHisPlot.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PreHisTable.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PreManual.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PreParams.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PreSystemManager.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

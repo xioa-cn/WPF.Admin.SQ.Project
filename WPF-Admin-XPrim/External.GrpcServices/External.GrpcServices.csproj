@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <PackageIcon>logo_32x32.ico</PackageIcon>
+        <ApplicationIcon>logo_32x32.ico</ApplicationIcon>
+        <OutputType>Library</OutputType>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <OutputPath>..\WPFAdmin\bin\Debug\</OutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Grpc.AspNetCore" Version="2.57.0" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <Protobuf Include="Protos\*.proto" GrpcServices="Server" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\WPF.Admin.Models\WPF.Admin.Models.csproj" />
+      <ProjectReference Include="..\WPF.Admin.Service\WPF.Admin.Service.csproj" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <None Update="logo_32x32.ico">
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
+      </None>
+    </ItemGroup>
+    
+
+</Project>

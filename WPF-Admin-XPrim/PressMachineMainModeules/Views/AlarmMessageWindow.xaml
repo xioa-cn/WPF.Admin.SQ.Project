@@ -1,0 +1,45 @@
+﻿<Window
+    x:Class="PressMachineMainModeules.Views.AlarmMessageWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:i18n="clr-namespace:WPF.Admin.Themes.I18n;assembly=WPF.Admin.Themes"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:PressMachineMainModeules.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:PressMachineMainModeules.ViewModels"
+    Title="{i18n:Localize Window.Title.Real_timeAlarm}"
+    Width="350"
+    Height="350"
+    d:DataContext="{d:DesignInstance Type=vm:AlarmViewModel}"
+    AllowsTransparency="True"
+    Background="Transparent"
+    ShowInTaskbar="False"
+    Topmost="True"
+    WindowStartupLocation="CenterScreen"
+    WindowStyle="None"
+    mc:Ignorable="d">
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="50" GlassFrameThickness="1" />
+    </WindowChrome.WindowChrome>
+    <Border CornerRadius="5" Visibility="{Binding VisibilityAlarm}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <ListBox
+                x:Name="AlarmList"
+                Margin="1"
+                Background="{DynamicResource Background.Brush}"
+                FontWeight="Bold"
+                ItemsSource="{Binding Alarms}" />
+
+            <!--<StackPanel
+                Grid.Row="1"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom">
+                <Button Click="MiniSize_Click" Margin="10">最小化</Button>
+            </StackPanel>-->
+        </Grid>
+    </Border>
+</Window>

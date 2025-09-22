@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <LangVersion>12</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\WPF.Admin.Models\WPF.Admin.Models.csproj" />
+      <ProjectReference Include="..\WPF.Admin.Service\WPF.Admin.Service.csproj" />
+      <ProjectReference Include="..\WPF.Admin.Themes\WPF.Admin.Themes.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Assets\Img\header.jpg" />
+      <Resource Include="Assets\Img\header.jpg" />
+      <None Remove="Assets\Img\welcome.png" />
+      <Resource Include="Assets\Img\logo.ico" />
+      <Resource Include="Assets\Img\welcome.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Assets\下载加载.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,192 @@
+﻿<Page
+    x:Class="PressMachineCMS.Views.VisualSettings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:converters="clr-namespace:PressMachineCMS.Converters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:PressMachineCMS.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:PressMachineCMS.ViewModels"
+    Title="可视化配置"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <ResourceDictionary>
+            <converters:NotNullConverter x:Key="NotNullConverter" />
+        </ResourceDictionary>
+    </Page.Resources>
+    <Page.DataContext>
+        <vm:VisualSettingsViewModel />
+    </Page.DataContext>
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Margin="0,0,0,10" Orientation="Horizontal">
+            <TextBlock VerticalAlignment="Center" Text="列数：" />
+            <TextBox
+                Width="50"
+                Margin="5,0,20,0"
+                Text="{Binding Settings.Column}" />
+            <Button
+                Margin="0,0,5,0"
+                Command="{Binding AddContentCommand}"
+                Content="添加内容" />
+            <Button
+                Margin="0,0,5,0"
+                Command="{Binding LoadCommand}"
+                Content="加载配置" />
+            <Button
+                Margin="0,0,5,0"
+                Command="{Binding SaveCommand}"
+                Content="保存配置" />
+            <Button
+                Margin="0,0,5,0"
+                Command="{Binding AddShowContentCommand}"
+                Content="添加显示项" />
+            <Button Command="{Binding DeleteShowContentCommand}" Content="删除显示项" />
+        </StackPanel>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!--  左侧列表  -->
+            <StackPanel>
+                <TextBlock>内容列表：</TextBlock>
+                <!--  压机列表  -->
+                <ListBox
+                    Height="150"
+                    Margin="0,0,0,10"
+                    DockPanel.Dock="Top"
+                    ItemsSource="{Binding Settings.Content}"
+                    SelectedItem="{Binding SelectedContent}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding PressMachineName}" />
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+
+                <!--  参数列表  -->
+                <TextBlock>参数列表：</TextBlock>
+                <ListBox
+                    Height="150"
+                    Margin="0,0,0,10"
+                    DockPanel.Dock="Top"
+                    ItemsSource="{Binding SelectedContent.VisualContentContent}"
+                    SelectedItem="{Binding SelectedContentContent}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding Name}" />
+                                <TextBlock Text=" - " />
+                                <TextBlock Text="{Binding Point}" />
+                                <TextBlock Text=" " />
+                                <TextBlock Text="{Binding Unit}" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+
+                <!--  显示列表  -->
+                <TextBlock>显示列表：</TextBlock>
+                <ListBox
+                    Height="150"
+                    Margin="0,0,0,10"
+                    DockPanel.Dock="Top"
+                    ItemsSource="{Binding SelectedContent.ShowVisualContent}"
+                    SelectedItem="{Binding SelectedShowContent}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding Name}" />
+                                <TextBlock Text=" - " />
+                                <TextBlock Text="{Binding Point}" />
+                                <TextBlock Text=" " />
+                                <TextBlock Text="{Binding Unit}" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+
+            </StackPanel>
+
+            <!--  右侧配置面板  -->
+            <ScrollViewer
+                Grid.Column="1"
+                Margin="10,0,0,0"
+                VerticalScrollBarVisibility="Auto">
+                <StackPanel>
+                    <!--  压机配置  -->
+                    <GroupBox Margin="0,0,0,10" Header="压机配置">
+                        <StackPanel IsEnabled="{Binding SelectedContent, Converter={StaticResource NotNullConverter}}">
+                            <TextBlock Margin="0,5" Text="启动信号" />
+                            <TextBox Margin="0,0,0,10" Text="{Binding SelectedContent.Drwaing, UpdateSourceTrigger=PropertyChanged}" />
+
+                            <TextBlock Margin="0,5" Text="压机位置" />
+                            <TextBox Margin="0,0,0,10" Text="{Binding SelectedContent.PressPos, UpdateSourceTrigger=PropertyChanged}" />
+
+                            <TextBlock Margin="0,5" Text="压机预压力" />
+                            <TextBox Margin="0,0,0,10" Text="{Binding SelectedContent.PressPre, UpdateSourceTrigger=PropertyChanged}" />
+
+                            <TextBlock Margin="0,5" Text="压机结果" />
+                            <TextBox Margin="0,0,0,10" Text="{Binding SelectedContent.PressRes, UpdateSourceTrigger=PropertyChanged}" />
+
+                            <TextBlock Margin="0,5" Text="压机编号" />
+                            <TextBox Margin="0,0,0,10" Text="{Binding SelectedContent.PressMachineNo, UpdateSourceTrigger=PropertyChanged}" />
+
+                            <TextBlock Margin="0,5" Text="压机名称" />
+                            <TextBox Margin="0,0,0,10" Text="{Binding SelectedContent.PressMachineName, UpdateSourceTrigger=PropertyChanged}" />
+
+                            <TextBlock Margin="0,5" Text="PLC键值" />
+                            <TextBox Margin="0,0,0,10" Text="{Binding SelectedContent.PlcKey, UpdateSourceTrigger=PropertyChanged}" />
+
+                            <StackPanel Margin="0,10" Orientation="Horizontal">
+                                <Button
+                                    Margin="0,0,5,0"
+                                    Command="{Binding AddContentContentCommand}"
+                                    Content="添加参数" />
+                                <Button Command="{Binding DeleteContentCommand}" Content="删除压机" />
+                            </StackPanel>
+                        </StackPanel>
+                    </GroupBox>
+
+                    <!--  参数配置  -->
+                    <GroupBox Margin="0,0,0,10" Header="参数配置">
+                        <StackPanel IsEnabled="{Binding SelectedContentContent, Converter={StaticResource NotNullConverter}}">
+                            <TextBlock Margin="0,5" Text="名称" />
+                            <TextBox Margin="0,0,0,10" Text="{Binding SelectedContentContent.Name, UpdateSourceTrigger=PropertyChanged}" />
+
+                            <TextBlock Margin="0,5" Text="点位" />
+                            <TextBox Margin="0,0,0,10" Text="{Binding SelectedContentContent.Point, UpdateSourceTrigger=PropertyChanged}" />
+
+                            <TextBlock Margin="0,5" Text="单位" />
+                            <TextBox Margin="0,0,0,10" Text="{Binding SelectedContentContent.Unit, UpdateSourceTrigger=PropertyChanged}" />
+
+                            <Button Command="{Binding DeleteContentContentCommand}" Content="删除参数" />
+                        </StackPanel>
+                    </GroupBox>
+
+                    <!--  显示配置  -->
+                    <GroupBox Margin="0,0,0,10" Header="显示配置">
+                        <StackPanel IsEnabled="{Binding SelectedShowContent, Converter={StaticResource NotNullConverter}}">
+                            <TextBlock Margin="0,5" Text="名称" />
+                            <TextBox Margin="0,0,0,10" Text="{Binding SelectedShowContent.Name, UpdateSourceTrigger=PropertyChanged}" />
+
+                            <TextBlock Margin="0,5" Text="点位" />
+                            <TextBox Margin="0,0,0,10" Text="{Binding SelectedShowContent.Point, UpdateSourceTrigger=PropertyChanged}" />
+
+                            <TextBlock Margin="0,5" Text="单位" />
+                            <TextBox Margin="0,0,0,10" Text="{Binding SelectedShowContent.Unit, UpdateSourceTrigger=PropertyChanged}" />
+                        </StackPanel>
+                    </GroupBox>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Page>

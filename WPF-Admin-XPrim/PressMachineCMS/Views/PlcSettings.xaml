@@ -1,0 +1,179 @@
+﻿<Page x:Class="PressMachineCMS.Views.PlcSettings"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:PressMachineCMS.Views"
+      xmlns:vm="clr-namespace:PressMachineCMS.ViewModels"
+      xmlns:converters="clr-namespace:PressMachineCMS.Converters"
+      xmlns:models="clr-namespace:PressMachineCMS.Models"
+      xmlns:sys="clr-namespace:System;assembly=System.Runtime"
+      xmlns:models1="clr-namespace:CMS.ReaderConfigLIbrary.Models;assembly=CMS.ReaderConfigLIbrary"
+      mc:Ignorable="d"
+      Title="PLC配置">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <converters:NotNullConverter x:Key="NotNullConverter" />
+            <ObjectDataProvider x:Key="PlcTypes" MethodName="GetValues"
+                                ObjectType="{x:Type sys:Enum}">
+                <ObjectDataProvider.MethodParameters>
+                    <x:Type TypeName="models1:PlcType" />
+                </ObjectDataProvider.MethodParameters>
+            </ObjectDataProvider>
+            <ObjectDataProvider x:Key="HeartbeatType" MethodName="GetValues"
+                                ObjectType="{x:Type sys:Enum}">
+                <ObjectDataProvider.MethodParameters>
+                    <x:Type TypeName="models1:HeartbeatType" />
+                </ObjectDataProvider.MethodParameters>
+            </ObjectDataProvider>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Page.DataContext>
+        <vm:PlcSettingsViewModel />
+    </Page.DataContext>
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+            <Button Content="添加PLC" Command="{Binding AddPlcCommand}" Margin="0,0,5,0" />
+            <Button Content="加载配置" Command="{Binding LoadCommand}" Margin="0,0,5,0" />
+            <Button Content="保存配置" Command="{Binding SaveCommand}" Margin="0,0,5,0" />
+        </StackPanel>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- 左侧列表 -->
+            <ListBox ItemsSource="{Binding Settings.Contents}"
+                     SelectedItem="{Binding SelectedPlc}"
+                     Margin="0,0,10,0">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Key}" FontWeight="Bold" />
+                            <TextBlock Text=" - " Margin="5,0" />
+                            <TextBlock Text="{Binding Ip}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+            <!-- 右侧配置面板 -->
+            <ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto">
+                <StackPanel IsEnabled="{Binding SelectedPlc, Converter={StaticResource NotNullConverter}}">
+                    <GroupBox Header="PLC基本配置" Margin="0,0,0,10">
+                        <StackPanel Margin="5">
+                            <TextBlock Text="键值" Margin="0,5" />
+                            <TextBox Text="{Binding SelectedPlc.Key, UpdateSourceTrigger=PropertyChanged}"
+                                     Margin="0,0,0,10" />
+
+                            <TextBlock Text="IP地址" Margin="0,5" />
+                            <TextBox Text="{Binding SelectedPlc.Ip, UpdateSourceTrigger=PropertyChanged}"
+                                     Margin="0,0,0,10" />
+
+                            <TextBlock Text="描述" Margin="0,5" />
+                            <TextBox Text="{Binding SelectedPlc.Desc, UpdateSourceTrigger=PropertyChanged}"
+                                     Margin="0,0,0,10" />
+
+                            <TextBlock Text="PLC类型" Margin="0,5" />
+                            <ComboBox ItemsSource="{Binding Source={StaticResource PlcTypes}}"
+                                      SelectedItem="{Binding SelectedPlc.Type}"
+                                      Margin="0,0,0,10" />
+                        </StackPanel>
+                    </GroupBox>
+
+                    <GroupBox Header="通信参数" Margin="0,0,0,10">
+                        <StackPanel Margin="5">
+                            <TextBlock Text="端口号" Margin="0,5" />
+                            <TextBox Text="{Binding SelectedPlc.Port}" Margin="0,0,0,10" />
+
+                            <TextBlock Text="站号" Margin="0,5" />
+                            <TextBox Text="{Binding SelectedPlc.Station}" Margin="0,0,0,10" />
+
+                            <TextBlock Text="连接超时(ms)" Margin="0,5" />
+                            <TextBox Text="{Binding SelectedPlc.ConnectTimeOut}" Margin="0,0,0,10" />
+
+                            <TextBlock Text="接收超时(ms)" Margin="0,5" />
+                            <TextBox Text="{Binding SelectedPlc.ReceiveTimeOut}" Margin="0,0,0,10" />
+
+                            <CheckBox Content="大端格式"
+                                      IsChecked="{Binding SelectedPlc.DataFormat}"
+                                      Margin="0,5,0,10" />
+                        </StackPanel>
+                    </GroupBox>
+
+                    <GroupBox Header="串口参数" Margin="0,0,0,10">
+                        <StackPanel Margin="5">
+                            <TextBlock Text="串口号" Margin="0,5" />
+                            <TextBox Text="{Binding SelectedPlc.SerialPort}" Margin="0,0,0,10" />
+
+                            <TextBlock Text="波特率" Margin="0,5" />
+                            <ComboBox SelectedValue="{Binding SelectedPlc.BaudRate}" Margin="0,0,0,10"
+                                      SelectedValuePath="Tag">
+                                <ComboBoxItem Content="4800" Tag="4800" />
+                                <ComboBoxItem Content="9600" Tag="9600" />
+                                <ComboBoxItem Content="19200" Tag="19200" />
+                                <ComboBoxItem Content="38400" Tag="38400" />
+                                <ComboBoxItem Content="57600" Tag="57600" />
+                                <ComboBoxItem Content="115200" Tag="115200" />
+                            </ComboBox>
+
+                            <TextBlock Text="数据位" Margin="0,5" />
+                            <ComboBox SelectedValue="{Binding SelectedPlc.DataBits}" SelectedValuePath="Tag"
+                                      Margin="0,0,0,10">
+                                <ComboBoxItem Content="7" Tag="7" />
+                                <ComboBoxItem Content="8" Tag="8" />
+                            </ComboBox>
+
+                            <TextBlock Text="停止位" Margin="0,5" />
+                            <ComboBox SelectedValue="{Binding SelectedPlc.StopBits}" SelectedValuePath="Tag"
+                                      Margin="0,0,0,10">
+                                <ComboBoxItem Content="1" Tag="1" />
+                                <ComboBoxItem Content="2" Tag="2" />
+                            </ComboBox>
+
+                            <TextBlock Text="校验位" Margin="0,5" />
+                            <ComboBox SelectedValue="{Binding SelectedPlc.Parity}" SelectedValuePath="Tag"
+                                      Margin="0,0,0,10">
+                                <ComboBoxItem Content="无校验" Tag="0" />
+                                <ComboBoxItem Content="奇校验" Tag="1" />
+                                <ComboBoxItem Content="偶校验" Tag="2" />
+                            </ComboBox>
+                        </StackPanel>
+                    </GroupBox>
+                    
+                    <GroupBox Header="心跳参数" Margin="0,0,0,10">
+                        <StackPanel Margin="5">
+                            <CheckBox Content="是否启用心跳" IsChecked="{Binding SelectedPlc.HavingHeartbeat}"></CheckBox>
+                    
+                            <TextBlock  Text="心跳间隔(ms)" Margin="0,5" />
+                            <TextBox IsEnabled="{Binding SelectedPlc.HavingHeartbeat}" Text="{Binding SelectedPlc.HeartbeatInterval}" Margin="0,0,0,10" />
+                    
+                            <TextBlock Text="心跳值(为两个值如0#1,True#False)" Margin="0,5" />
+                            <TextBox IsEnabled="{Binding SelectedPlc.HavingHeartbeat}" Text="{Binding SelectedPlc.HeartbeatValue}" Margin="0,0,0,10" />
+                            
+                            <TextBlock Text="心跳地址" Margin="0,5" />
+                            <TextBox IsEnabled="{Binding SelectedPlc.HavingHeartbeat}" Text="{Binding SelectedPlc.HeartbeatPoint}" Margin="0,0,0,10" />
+                            
+                            <TextBlock Text="心跳类型" Margin="0,5" />
+                            <ComboBox IsEnabled="{Binding SelectedPlc.HavingHeartbeat}" SelectedItem="{Binding SelectedPlc.HeartbeatType}"
+                                      ItemsSource="{Binding Source={StaticResource HeartbeatType}}" />
+                        </StackPanel>
+                    </GroupBox>
+                    
+                    <Button Content="删除" Command="{Binding DeletePlcCommand}"
+                            HorizontalAlignment="Left" Margin="5,10,0,10" />
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Page>

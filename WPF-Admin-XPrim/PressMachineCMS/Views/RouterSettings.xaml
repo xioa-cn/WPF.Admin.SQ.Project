@@ -1,0 +1,145 @@
+﻿<Page
+    x:Class="PressMachineCMS.Views.RouterSettings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:converters="clr-namespace:PressMachineCMS.Converters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:PressMachineCMS.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:PressMachineCMS.ViewModels"
+    Title="路由配置"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <ResourceDictionary>
+            <converters:NotNullConverter x:Key="NotNullConverter" />
+        </ResourceDictionary>
+    </Page.Resources>
+    <Page.DataContext>
+        <vm:RouterSettingsViewModel />
+    </Page.DataContext>
+
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="340" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!--  左侧路由树  -->
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <!--  按钮部分的修改  -->
+            <StackPanel
+                Grid.Row="0"
+                Margin="0,0,0,10"
+                Orientation="Horizontal">
+                <Button
+                    Margin="0,0,5,0"
+                    Padding="10,5"
+                    Command="{Binding AddRootRouterCommand}">
+                    <TextBlock VerticalAlignment="Center" Text="添加一级路由" />
+                </Button>
+                <Button
+                    Margin="0,0,5,0"
+                    Padding="10,5"
+                    Command="{Binding AddChildRouterCommand}">
+                    <TextBlock VerticalAlignment="Center" Text="添加子路由" />
+                </Button>
+                <Button
+                    Margin="5,0"
+                    Padding="10,5"
+                    Command="{Binding LoadRouterCommand}">
+                    <TextBlock VerticalAlignment="Center" Text="加载配置" />
+                </Button>
+                <Button
+                    Margin="5,0"
+                    Padding="10,5"
+                    Command="{Binding DeleteRouterCommand}">
+                    <TextBlock VerticalAlignment="Center" Text="删除" />
+                </Button>
+            </StackPanel>
+            <TreeView
+                Grid.Row="1"
+                ItemsSource="{Binding Routers}"
+                SelectedItemChanged="TreeView_SelectedItemChanged">
+                <TreeView.ItemTemplate>
+                    <HierarchicalDataTemplate ItemsSource="{Binding Children}">
+                        <TextBlock Text="{Binding Name}" />
+                    </HierarchicalDataTemplate>
+                </TreeView.ItemTemplate>
+            </TreeView>
+        </Grid>
+        <ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto">
+            <!--  右侧配置面板  -->
+            <Grid
+                Margin="20,0,0,0"
+                IsEnabled="{Binding SelectedRouter, Converter={StaticResource NotNullConverter}}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <TextBlock
+                    Margin="0,0,0,20"
+                    FontSize="18"
+                    FontWeight="Bold"
+                    Text="路由配置" />
+
+
+                <StackPanel Grid.Row="1" Margin="0,0,0,10">
+                    <TextBlock Margin="0,0,0,5" Text="路由名称" />
+                    <TextBox Margin="0,0,0,15"
+                             Text="{Binding SelectedRouter.Name, UpdateSourceTrigger=PropertyChanged}" />
+
+                    <TextBlock Margin="0,0,0,5" Text="路由路径" />
+                    <TextBox Margin="0,0,0,15"
+                             Text="{Binding SelectedRouter.Path, UpdateSourceTrigger=PropertyChanged}" />
+
+                    <TextBlock Margin="0,0,0,5" Text="组件路径" />
+                    <TextBox Margin="0,0,0,15"
+                             Text="{Binding SelectedRouter.Component, UpdateSourceTrigger=PropertyChanged}" />
+
+                    <TextBlock Margin="0,0,0,5" Text="图标" />
+                    <TextBox Margin="0,0,0,15"
+                             Text="{Binding SelectedRouter.Icon, UpdateSourceTrigger=PropertyChanged}" />
+
+                    <TextBlock Margin="0,0,0,5" Text="排序" />
+                    <TextBox Margin="0,0,0,15"
+                             Text="{Binding SelectedRouter.Sort, UpdateSourceTrigger=PropertyChanged}" />
+
+                    <CheckBox
+                        Margin="0,0,0,15"
+                        Content="在菜单中显示"
+                        IsChecked="{Binding SelectedRouter.ShowInMenu}" />
+
+                    <TextBlock Margin="0,0,0,5" Text="权限等级" />
+                    <ComboBox
+                        Margin="0,0,0,15"
+                        SelectedValue="{Binding SelectedRouter.LoginAuth}"
+                        SelectedValuePath="Tag"
+                        Width="200"
+                        HorizontalAlignment="Left">
+                        <ComboBoxItem Content="无需权限" Tag="0" />
+                        <ComboBoxItem Content="等级1权限" Tag="1" />
+                        <ComboBoxItem Content="等级2权限" Tag="2" />
+                        <ComboBoxItem Content="等级3权限" Tag="3" />
+                        <ComboBoxItem Content="等级4权限" Tag="4" />
+                        <ComboBoxItem Content="等级5权限" Tag="5" />
+                    </ComboBox>
+
+                    <StackPanel Margin="0,20,0,0" Orientation="Horizontal">
+                        <Button
+                            Margin="0,0,10,0"
+                            Padding="20,5"
+                            Command="{Binding SaveRouterCommand}"
+                            Content="保存" />
+                    </StackPanel>
+                </StackPanel>
+
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>

@@ -1,0 +1,47 @@
+﻿<UserControl
+    x:Class="PressMachineMainModeules.Components.Manual2OperationDialogView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:converter="clr-namespace:PressMachineMainModeules.Converters"
+    xmlns:i18n="clr-namespace:WPF.Admin.Themes.I18n;assembly=WPF.Admin.Themes"
+    xmlns:local="clr-namespace:PressMachineMainModeules.Components"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:PressMachineMainModeules.ViewModels"
+    d:DataContext="{d:DesignInstance Type=vm:PreManual2ViewModel}"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <converter:ManualButtonI18nConverter x:Key="ManualButtonI18NConverter" />
+    </UserControl.Resources>
+    <Border
+        Margin="5"
+        BorderBrush="{DynamicResource Primary.Brush}"
+        BorderThickness="0">
+        <Viewbox VerticalAlignment="Top">
+            <Grid>
+                <ItemsControl ItemsSource="{Binding ManualButtonModels}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <UniformGrid Columns="2" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Button
+                                Width="200"
+                                Height="60"
+                                Margin="10"
+                                BorderBrush="{DynamicResource Primary.Brush}"
+                                i18n:I18nLocalizeAttach.AutoLocalize="{Binding Desc,Converter={StaticResource ManualButtonI18NConverter}}"
+                                FontSize="20"
+                                PreviewMouseDown="btnClick"
+                                PreviewMouseUp="Button_PreviewMouseUp"
+                                Style="{StaticResource ButtonSuccess}"
+                                Tag="{Binding}" />
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </Grid>
+        </Viewbox>
+    </Border>
+</UserControl>

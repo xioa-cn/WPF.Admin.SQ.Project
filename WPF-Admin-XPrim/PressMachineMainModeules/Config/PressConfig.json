@@ -1,0 +1,11 @@
+{
+  "ParasName": "test",
+  "ParasWriteIndex": false,
+  "XUnit": "mm",
+  "YUnit": "N",
+  "XName": "位移",
+  "YName": "压力",
+  "PositionUnitName": "mm",
+  "PressUnitName": "N",
+  "SpeedUnitName": "mm/s"
+}

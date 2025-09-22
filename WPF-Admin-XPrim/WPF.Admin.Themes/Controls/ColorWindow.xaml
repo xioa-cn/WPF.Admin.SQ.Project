@@ -1,0 +1,123 @@
+﻿<Window
+    x:Class="WPF.Admin.Themes.Controls.ColorWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WPF.Admin.Themes.Controls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="ColorWindow"
+    Width="auto" MaxWidth="500" MaxHeight="350"
+    Height="auto"
+    ResizeMode="NoResize"
+    mc:Ignorable="d">
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="50" GlassFrameThickness="1" />
+    </WindowChrome.WindowChrome>
+    <Border Background="#FFF">
+        <Grid Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="auto " />
+                <RowDefinition Height="auto " />
+            </Grid.RowDefinitions>
+            <UniformGrid Margin="80,50">
+                <Button
+                    Background="#1890ff"
+                    Click="ThemeChangeColorClick"
+                    Style="{x:Null}">
+                    Blue
+                </Button>
+                <Button
+                    Background="#13c2c2"
+                    Click="ThemeChangeColorClick"
+                    Style="{x:Null}">
+                    Cyan
+                </Button>
+                <Button
+                    Background="#52c41a"
+                    Click="ThemeChangeColorClick"
+                    Style="{x:Null}">
+                    Green
+                </Button>
+                <Button
+                    Background="#fa8c16"
+                    Click="ThemeChangeColorClick"
+                    Style="{x:Null}">
+                    Orange
+                </Button>
+                <Button
+                    Background="#eb2f96"
+                    Click="ThemeChangeColorClick"
+                    Style="{x:Null}">
+                    Pink
+                </Button>
+                <Button
+                    Background="#722ed1"
+                    Click="ThemeChangeColorClick"
+                    Style="{x:Null}">
+                    Purple
+                </Button>
+                <Button
+                    Background="#f5222d"
+                    Click="ThemeChangeColorClick"
+                    Style="{x:Null}">
+                    Red
+                </Button>
+                <Button
+                    Background="#fadb14"
+                    Click="ThemeChangeColorClick"
+                    Style="{x:Null}">
+                    Yellow
+                </Button>
+                <Button
+                    Background="#0052CC"
+                    Click="ThemeChangeColorClick"
+                    Style="{x:Null}">
+                    IndustrialBlue
+                </Button>
+                <Button
+                    Background="Silver"
+                    Click="ThemeChangeColorClick"
+                    Style="{x:Null}">
+                    Silver
+                </Button>
+                <Button
+                    Background="#36D399"
+                    Click="ThemeChangeColorClick"
+                    Style="{x:Null}">
+                    PeppermintGreen
+                </Button>
+                <Button
+                    Background="#64748B"
+                    Click="ThemeChangeColorClick"
+                    Style="{x:Null}">
+                    NeutralGrey
+                </Button>
+            </UniformGrid>
+            <StackPanel
+                Grid.Row="1"
+                HorizontalAlignment="Center"
+                Background="Red"
+                Orientation="Horizontal">
+                <TextBlock Name="ColorText" />
+            </StackPanel>
+            <StackPanel
+                Grid.Row="2"
+                HorizontalAlignment="Center"
+                Orientation="Horizontal">
+                <Button
+                    Margin="10"
+                    Click="SaveClick"
+                    Style="{StaticResource VasuButton1}">
+                    保存
+                </Button>
+                <Button
+                    Margin="10"
+                    Click="CancelClick"
+                    Style="{StaticResource VasuButton1}">
+                    取消
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>

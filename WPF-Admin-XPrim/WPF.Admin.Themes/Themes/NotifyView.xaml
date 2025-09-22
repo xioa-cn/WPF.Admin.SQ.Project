@@ -1,0 +1,83 @@
+﻿<UserControl
+    x:Class="WPF.Admin.Themes.Themes.NotifyView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WPF.Admin.Themes.Themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="clr-namespace:WPF.Admin.Models.Models;assembly=WPF.Admin.Models"
+    Width="auto"
+    Height="auto"
+    FontWeight="Bold"
+    mc:Ignorable="d">
+    <Border BorderThickness="1" CornerRadius="8">
+        <Grid Margin="12">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <TextBlock
+                Grid.Row="0"
+                Margin="0,0,0,12"
+                FontSize="16"
+                FontWeight="Medium"
+                Text="{Binding Source={x:Static models:AppSettings.Default}, Path=AppName}" />
+
+            <StackPanel
+                Grid.Row="1"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+                <Button
+                    Width="100"
+                    Height="32"
+                    Margin="5"
+                    Command="{Binding OpenCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <Border>
+                            <Path
+                                Height="15"
+                                Margin="0,0,0,0"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Data=" M657.066667 492.8c17.066667 17.066667 42.666667 17.066667 59.733333 0l128-128c17.066667-17.066667 17.066667-42.666667 0-59.733333l-128-128c-17.066667-17.066667-42.666667-17.066667-59.733333 0l-128 128c-17.066667 17.066667-17.066667 42.666667 0 59.733333l128 128zM443.733333 174.933333h-234.666666c-23.466667 0-42.666667 19.2-42.666667 42.666667v234.666667c0 23.466667 19.2 42.666667 42.666667 42.666666h234.666666c23.466667 0 42.666667-19.2 42.666667-42.666666v-234.666667c0-23.466667-19.2-42.666667-42.666667-42.666667z m0 277.333334h-234.666666v-234.666667h234.666666v234.666667zM443.733333 537.6h-234.666666c-23.466667 0-42.666667 19.2-42.666667 42.666667v234.666666c0 23.466667 19.2 42.666667 42.666667 42.666667h234.666666c23.466667 0 42.666667-19.2 42.666667-42.666667v-234.666666c0-23.466667-19.2-42.666667-42.666667-42.666667z m0 277.333333h-234.666666v-234.666666h234.666666v234.666666zM806.4 537.6h-234.666667c-23.466667 0-42.666667 19.2-42.666666 42.666667v234.666666c0 23.466667 19.2 42.666667 42.666666 42.666667h234.666667c23.466667 0 42.666667-19.2 42.666667-42.666667v-234.666666c0-23.466667-19.2-42.666667-42.666667-42.666667z m0 277.333333h-234.666667v-234.666666h234.666667v234.666666z "
+                                Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}"
+                                Stretch="Uniform" />
+                        </Border>
+                        <TextBlock
+                            Margin="10,0"
+                            VerticalAlignment="Center"
+                            Text="打开"
+                            TextAlignment="Center" />
+                    </StackPanel>
+                </Button>
+
+                <Button
+                    Width="100"
+                    Height="32"
+                    Margin="5"
+                    Command="{Binding CloseCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <Border>
+                            <Path
+                                Height="15"
+                                Margin="0,0,0,0"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Data=" M657.066667 492.8c17.066667 17.066667 42.666667 17.066667 59.733333 0l128-128c17.066667-17.066667 17.066667-42.666667 0-59.733333l-128-128c-17.066667-17.066667-42.666667-17.066667-59.733333 0l-128 128c-17.066667 17.066667-17.066667 42.666667 0 59.733333l128 128zM443.733333 174.933333h-234.666666c-23.466667 0-42.666667 19.2-42.666667 42.666667v234.666667c0 23.466667 19.2 42.666667 42.666667 42.666666h234.666666c23.466667 0 42.666667-19.2 42.666667-42.666666v-234.666667c0-23.466667-19.2-42.666667-42.666667-42.666667z m0 277.333334h-234.666666v-234.666667h234.666666v234.666667zM443.733333 537.6h-234.666666c-23.466667 0-42.666667 19.2-42.666667 42.666667v234.666666c0 23.466667 19.2 42.666667 42.666667 42.666667h234.666666c23.466667 0 42.666667-19.2 42.666667-42.666667v-234.666666c0-23.466667-19.2-42.666667-42.666667-42.666667z m0 277.333333h-234.666666v-234.666666h234.666666v234.666666zM806.4 537.6h-234.666667c-23.466667 0-42.666667 19.2-42.666666 42.666667v234.666666c0 23.466667 19.2 42.666667 42.666666 42.666667h234.666667c23.466667 0 42.666667-19.2 42.666667-42.666667v-234.666666c0-23.466667-19.2-42.666667-42.666667-42.666667z m0 277.333333h-234.666667v-234.666666h234.666667v234.666666z "
+                                Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}"
+                                Stretch="Uniform" />
+                        </Border>
+                        <TextBlock
+                            Margin="10,0"
+                            VerticalAlignment="Bottom"
+                            FontWeight="Bold"
+                            Text="关闭"
+                            TextAlignment="Center" />
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Border>
+
+</UserControl>

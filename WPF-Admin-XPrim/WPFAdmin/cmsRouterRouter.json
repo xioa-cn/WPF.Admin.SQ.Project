@@ -1,0 +1,10 @@
+﻿{
+  "Routers": [
+    {
+      "key": "AppSettings",
+      "content": "RouterSettings",
+      "page": "CMSRoutersSettings",
+      "icon": "SystemInfo"
+    }
+  ]
+}

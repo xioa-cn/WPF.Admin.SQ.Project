@@ -1,0 +1,141 @@
+﻿<Page
+    x:Class="SystemModules.Views.SystemAlarmLogView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:SystemModules.Views"
+    xmlns:i18n="clr-namespace:WPF.Admin.Themes.I18n;assembly=WPF.Admin.Themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:SystemModules.ViewModels"
+    Title="SystemAlarmLogView"
+    d:DataContext="{d:DesignInstance Type=vm:SystemAlarmLogViewModel}"
+    mc:Ignorable="d">
+    <Grid>
+        <!--  数据表格  -->
+        <DataGrid
+            Width="auto"
+            Margin="10"
+            AlternatingRowBackground="{DynamicResource Surface.Brush}"
+            AutoGenerateColumns="False"
+            Background="{DynamicResource Background.Brush}"
+            BorderBrush="{DynamicResource Border.Brush}"
+            BorderThickness="1"
+            FontSize="20"
+            GridLinesVisibility="All"
+            HeadersVisibility="Column"
+            HorizontalGridLinesBrush="{DynamicResource Border.Brush}"
+            IsReadOnly="True"
+            ItemsSource="{Binding AlarmLogs}"
+            LoadingRow="DataGrid_LoadingRow"
+            RowBackground="{DynamicResource Background.Brush}"
+            RowHeaderWidth="40"
+            VerticalGridLinesBrush="{DynamicResource Border.Brush}">
+            <DataGrid.Columns>
+                <!--  使用 LoadingRow 事件  -->
+                <DataGridTextColumn
+                    Width="auto"
+                    Binding="{Binding RelativeSource={RelativeSource AncestorType=DataGridRow}, Path=Header}"
+                    Header="{i18n:Localize Table.Serial}"
+                    IsReadOnly="True" />
+                <DataGridTextColumn
+                    Width="*"
+                    Binding="{Binding Id}"
+                    Header="{i18n:Localize Table.DbSerial}">
+                    <DataGridTextColumn.CellStyle>
+                        <Style BasedOn="{StaticResource cell}" TargetType="DataGridCell">
+                            <!--  其他样式设置保持不变  -->
+                            <Setter Property="ToolTip">
+                                <Setter.Value>
+                                    <ToolTip>
+                                        <StackPanel>
+                                            <TextBlock FontWeight="Bold" i18n:I18nLocalizeAttach.AutoLocalize="Table.ColumnName" />
+                                            <TextBlock i18n:I18nLocalizeAttach.AutoLocalize="Table.DbSerial" />
+                                            <TextBlock FontWeight="Bold" i18n:I18nLocalizeAttach.AutoLocalize="Table.ColumnValue" />
+                                            <TextBlock Text="{Binding Id}" />
+                                        </StackPanel>
+                                    </ToolTip>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn
+                    Width="*"
+                    Binding="{Binding Message}"
+                    Header="{i18n:Localize Table.AlarmInfo}">
+                    <DataGridTextColumn.CellStyle>
+                        <Style BasedOn="{StaticResource cell}" TargetType="DataGridCell">
+                            <!--  其他样式设置保持不变  -->
+                            <Setter Property="ToolTip">
+                                <Setter.Value>
+                                    <ToolTip>
+                                        <StackPanel>
+                                            <TextBlock FontWeight="Bold" i18n:I18nLocalizeAttach.AutoLocalize="Table.ColumnName" />
+                                            <TextBlock i18n:I18nLocalizeAttach.AutoLocalize="Table.AlarmInfo" />
+                                            <TextBlock FontWeight="Bold" i18n:I18nLocalizeAttach.AutoLocalize="Table.ColumnValue" />
+                                            <TextBlock Text="{Binding Message}" />
+                                        </StackPanel>
+                                    </ToolTip>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn
+                    Width="*"
+                    Binding="{Binding CreateTime}"
+                    Header="{i18n:Localize Table.CreateTime}">
+                    <DataGridTextColumn.CellStyle>
+                        <Style BasedOn="{StaticResource cell}" TargetType="DataGridCell">
+                            <!--  其他样式设置保持不变  -->
+                            <Setter Property="ToolTip">
+                                <Setter.Value>
+                                    <ToolTip>
+                                        <StackPanel>
+                                            <TextBlock FontWeight="Bold" i18n:I18nLocalizeAttach.AutoLocalize="Table.ColumnName"/>
+                                            <TextBlock i18n:I18nLocalizeAttach.AutoLocalize="Table.CreateTime" />
+                                            <TextBlock FontWeight="Bold" i18n:I18nLocalizeAttach.AutoLocalize="Table.ColumnValue" />
+                                            <TextBlock Text="{Binding CreateTime}" />
+                                        </StackPanel>
+                                    </ToolTip>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn
+                    Width="*"
+                    Binding="{Binding Type}"
+                    Header="{i18n:Localize Table.Type}">
+                    <DataGridTextColumn.CellStyle>
+                        <Style BasedOn="{StaticResource cell}" TargetType="DataGridCell">
+                            <!--  其他样式设置保持不变  -->
+                            <Setter Property="ToolTip">
+                                <Setter.Value>
+                                    <ToolTip>
+                                        <StackPanel>
+                                            <TextBlock FontWeight="Bold" 
+                                                       i18n:I18nLocalizeAttach.AutoLocalize="Table.ColumnName"/>
+                                            <TextBlock i18n:I18nLocalizeAttach.AutoLocalize="Table.Type" />
+                                            <TextBlock FontWeight="Bold" i18n:I18nLocalizeAttach.AutoLocalize="Table.ColumnValue" />
+                                            <TextBlock Text="{Binding Type}" />
+                                        </StackPanel>
+                                    </ToolTip>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button
+            Margin="20"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Content="{i18n:Localize btn.Refresh}"
+            Command="{Binding LoadedCommand}"
+            Style="{StaticResource ButtonWarning}">
+        </Button>
+    </Grid>
+</Page>

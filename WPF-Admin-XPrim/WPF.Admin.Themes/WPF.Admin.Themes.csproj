@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <LangVersion>12</LangVersion>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="HandyControl" Version="3.5.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\WPF.Admin.Models\WPF.Admin.Models.csproj" />
+      <ProjectReference Include="..\WPF.Admin.Service\WPF.Admin.Service.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\normal.ani" />
+      <Resource Include="Resources\authcode.dll" />
+      <Resource Include="Resources\normal.ani" />
+      <None Remove="Resources\Hand.ani" />
+      <Resource Include="Resources\Hand.ani" />
+      <None Remove="Resources\link.ani" />
+      <Resource Include="Resources\link.ani" />
+    </ItemGroup>
+
+</Project>

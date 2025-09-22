@@ -1,0 +1,6 @@
+@HttpRequest.Test_HostAddress = http://localhost:5066
+
+GET {{HttpRequest.Test_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

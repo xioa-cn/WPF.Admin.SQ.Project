@@ -1,0 +1,33 @@
+﻿<Application
+    x:Class="WPFAdmin.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:converter="clr-namespace:WPF.Admin.Themes.Converter;assembly=WPF.Admin.Themes"
+    xmlns:hc="https://handyorg.github.io/handycontrol"
+    xmlns:local="clr-namespace:WPFAdmin"
+    xmlns:system="clr-namespace:System;assembly=netstandard">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!--  HandyControl基础主题  -->
+                <ResourceDictionary Source="pack://application:,,,/HandyControl;component/Themes/SkinDefault.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/HandyControl;component/Themes/Theme.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/WPF.Admin.Themes;component/Generic.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+            <converter:LoginAuthToEnabledConverter x:Key="RouterIsEnabledConverter" />
+            <converter:LoginAuthToVisibilityConverter x:Key="RouterVisibilityConverter" />
+
+
+            <converter:LoginAuthToEnabledAuthConverter x:Key="AdminEnabled" LoginAuth="Admin" />
+            <converter:LoginAuthToEnabledAuthConverter x:Key="EmployeeEnabled" LoginAuth="Employee" />
+            <converter:LoginAuthToEnabledAuthConverter x:Key="EngineerEnabled" LoginAuth="Engineer" />
+
+            <converter:LoginAuthToVisibilityAuthConverter x:Key="AdminVisibility" LoginAuth="Admin" />
+            <converter:LoginAuthToVisibilityAuthConverter x:Key="EmployeeVisibility" LoginAuth="Employee" />
+            <converter:LoginAuthToVisibilityAuthConverter x:Key="EngineerVisibility" LoginAuth="Engineer" />
+
+            <converter:PageContentAuthIsEnabledConverter x:Key="PageContentAuthIsEnabledConverter" />
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

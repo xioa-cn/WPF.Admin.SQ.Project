@@ -1,0 +1,129 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UseWPF>true</UseWPF>
+        <LangVersion>12</LangVersion>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <ApplicationIcon>Assets\logo\logobase.ico</ApplicationIcon>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="Assets\logo\logo.ico" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="2.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\CMS.AppRouters\CMS.AppRouters.csproj" />
+        <ProjectReference Include="..\CMS.AppSettings\CMS.AppSettings.csproj" />
+        <ProjectReference Include="..\External.GrpcServices\External.GrpcServices.csproj" />
+        <ProjectReference Include="..\PressMachineCMS\PressMachineCMS.csproj" />
+        <ProjectReference Include="..\RouterEventModules\RouterEventModules.csproj" />
+        <ProjectReference Include="..\SharedMemoryDemoModules\SharedMemoryDemoModules.csproj" />
+        <ProjectReference Include="..\SQ.Project\SQ.Project.csproj" />
+        <ProjectReference Include="..\SystemModules\SystemModules.csproj" />
+        <ProjectReference Include="..\WPF.Admin.Themes\WPF.Admin.Themes.csproj" />
+        <ProjectReference Include="..\WPFAdmin.DialogModules\WPFAdmin.DialogModules.csproj" />
+        <ProjectReference Include="..\WPFAdmin.LoginModules\WPFAdmin.LoginModules.csproj" />
+        <ProjectReference Include="..\WPFAdmin.NavigationModules\WPFAdmin.NavigationModules.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="modules.config">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="IOConfigs\PressMachine.xlsx">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Assets\logo\welcome.html">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Folder Include="Models\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Remove="authcode.txt" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Remove="appSettingsRouter.json" />
+        <Resource Include="appSettingsRouter.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
+        <None Remove="cmsRouter.json" />
+        <Resource Include="cmsRouter.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Resource>
+        <None Remove="router.json" />
+        <Resource Include="router.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
+        <None Remove="appSettings.json" />
+        <Resource Include="appConfigSettings.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Resource>
+        <None Remove="WPFAdmin.auc.bat" />
+        <Resource Include="WPFAdmin.auc.bat">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
+        <None Remove="WPFAdmin.cas.bat" />
+        <Resource Include="WPFAdmin.cas.bat">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
+        <None Remove="WPFAdmin.cms.bat" />
+        <Resource Include="WPFAdmin.cms.bat">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
+        <None Remove="WPFAdmin.rea.bat" />
+        <Resource Include="WPFAdmin.rea.bat">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
+        <None Remove="WPFAdmin.rpc.bat" />
+        <Resource Include="WPFAdmin.rpc.bat">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
+        <None Remove="WPFAdmin.crs.bat" />
+        <Resource Include="WPFAdmin.crs.bat">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
+        <None Remove="cmsRouterRouter.json" />
+        <Resource Include="cmsRouterRouter.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
+        <None Remove="Assets\logo\AppBaseConfig.json" />
+        <Resource Include="Assets\logo\AppBaseConfig.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
+        <None Remove="Assets\logo\logo_32x32.ico" />
+        <Resource Include="Assets\logo\logobase.ico">
+          <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+        </Resource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Langs\en.json" />
+      <EmbeddedResource Include="Langs\en.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Langs\zh.json" />
+      <EmbeddedResource Include="Langs\zh.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Config\Configs.cs">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Compile>
+    </ItemGroup>
+
+</Project>

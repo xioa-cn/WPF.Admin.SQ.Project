@@ -1,0 +1,11 @@
+{
+  "Routers": [
+    {
+      "key": "数据采集",
+      "content": "数据采集",
+      "icon": "Visualization",
+      "page": "SQVisual",
+      "LoginAuth": 5
+    }
+  ]
+}

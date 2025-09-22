@@ -1,0 +1,1 @@
+.\WPFAdmin.exe --debug -account resetAdmin
