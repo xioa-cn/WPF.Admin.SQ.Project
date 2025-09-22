@@ -1,9 +1,9 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Messaging;
-using Microsoft.IdentityModel.Logging;
 using SQ.Project.Component;
 using System.Collections.ObjectModel;
 using WPF.Admin.Service.Services;
+using WPF.Admin.UserLogger;
 
 namespace SQ.Project.ViewModels
 {
@@ -20,7 +20,7 @@ namespace SQ.Project.ViewModels
         public CodeCollectionViewModel()
         {
             Msg = new ObservableCollection<string>();
-         
+
             Status = true;
             Code = "ACC20250922154660-00001";
 
@@ -34,7 +34,7 @@ namespace SQ.Project.ViewModels
             {
                 MessageToUI($"这是第 {i} 条测试数据");
                 i++;
-                await Task.Delay(100);
+                await Task.Delay(5000);
             }
         }
 
@@ -54,7 +54,7 @@ namespace SQ.Project.ViewModels
                 });
             });
 
-           
+            UserLogService.Instance?.LogInfo(message, "总线扫码");
         }
     }
 }

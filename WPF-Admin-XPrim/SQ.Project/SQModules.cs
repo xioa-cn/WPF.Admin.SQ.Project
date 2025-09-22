@@ -2,6 +2,7 @@
 using SQ.Project.Views;
 using WPF.Admin.Models.Models;
 using WPF.Admin.Themes.I18n;
+using WPF.Admin.UserLogger;
 using XPrism.Core.DI;
 using XPrism.Core.Modules;
 using XPrism.Core.Modules.Find;
@@ -21,15 +22,14 @@ namespace SQ.Project
 
         public void OnInitialized(IContainerProvider containerProvider)
         {
-           
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            UserLogService.CreateLoggerInstance();
             var regionManager = containerRegistry.Resolve<IRegionManager>();
             regionManager.RegisterForNavigation<SQVisualHome, SQVisualHomeViewModel>(RegionName.HomeRegion,
                 "SQVisual");
-           
         }
     }
 }

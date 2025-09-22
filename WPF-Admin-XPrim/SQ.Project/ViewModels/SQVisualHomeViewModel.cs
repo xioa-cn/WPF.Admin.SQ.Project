@@ -39,7 +39,7 @@ namespace SQ.Project.ViewModels
                   },
                   new CarouselContent()
                   {
-                      Name= "OP20",
+                      Name= "OP10-产品上线",
                       Page = new StationFirst(_stationFirstViewModel)
                   },
                  

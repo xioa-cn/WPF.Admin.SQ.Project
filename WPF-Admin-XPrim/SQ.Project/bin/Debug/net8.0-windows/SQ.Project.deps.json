@@ -10,7 +10,8 @@
         "dependencies": {
           "WPF.Admin.Models": "1.0.0",
           "WPF.Admin.Service": "1.0.0",
-          "WPF.Admin.Themes": "1.0.0"
+          "WPF.Admin.Themes": "1.0.0",
+          "WPF.Admin.UserLogger": "1.0.0"
         },
         "runtime": {
           "SQ.Project.dll": {}
@@ -1860,6 +1861,14 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "WPF.Admin.UserLogger/1.0.0": {
+        "runtime": {
+          "WPF.Admin.UserLogger.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -2797,6 +2806,11 @@
       "sha512": ""
     },
     "WPF.Admin.Themes/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WPF.Admin.UserLogger/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

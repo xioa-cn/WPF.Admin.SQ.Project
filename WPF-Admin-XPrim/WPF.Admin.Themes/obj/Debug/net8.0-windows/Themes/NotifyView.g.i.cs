@@ -54,7 +54,7 @@ namespace WPF.Admin.Themes.Themes {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WPF.Admin.Themes;component/themes/notifyview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WPF.Admin.Themes;V1.0.0.0;component/themes/notifyview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Themes\NotifyView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

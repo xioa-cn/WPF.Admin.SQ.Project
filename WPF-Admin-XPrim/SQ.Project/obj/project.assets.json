@@ -2640,6 +2640,19 @@
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
         ]
+      },
+      "WPF.Admin.UserLogger/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/WPF.Admin.UserLogger.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WPF.Admin.UserLogger.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       }
     }
   },
@@ -6431,13 +6444,19 @@
       "type": "project",
       "path": "../WPF.Admin.Themes/WPF.Admin.Themes.csproj",
       "msbuildProject": "../WPF.Admin.Themes/WPF.Admin.Themes.csproj"
+    },
+    "WPF.Admin.UserLogger/1.0.0": {
+      "type": "project",
+      "path": "../WPF.Admin.UserLogger/WPF.Admin.UserLogger.csproj",
+      "msbuildProject": "../WPF.Admin.UserLogger/WPF.Admin.UserLogger.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "WPF.Admin.Models >= 1.0.0",
       "WPF.Admin.Service >= 1.0.0",
-      "WPF.Admin.Themes >= 1.0.0"
+      "WPF.Admin.Themes >= 1.0.0",
+      "WPF.Admin.UserLogger >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6485,6 +6504,9 @@
             },
             "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
               "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj"
+            },
+            "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.UserLogger\\WPF.Admin.UserLogger.csproj": {
+              "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.UserLogger\\WPF.Admin.UserLogger.csproj"
             }
           }
         }

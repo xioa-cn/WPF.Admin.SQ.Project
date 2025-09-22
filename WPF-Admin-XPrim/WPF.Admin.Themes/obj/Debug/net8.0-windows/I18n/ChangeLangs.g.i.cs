@@ -77,7 +77,7 @@ namespace WPF.Admin.Themes.I18n {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WPF.Admin.Themes;component/i18n/changelangs.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WPF.Admin.Themes;V1.0.0.0;component/i18n/changelangs.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\I18n\ChangeLangs.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -2878,7 +2878,8 @@
         "dependencies": {
           "WPF.Admin.Models": "1.0.0",
           "WPF.Admin.Service": "1.0.0",
-          "WPF.Admin.Themes": "1.0.0"
+          "WPF.Admin.Themes": "1.0.0",
+          "WPF.Admin.UserLogger": "1.0.0"
         },
         "compile": {
           "bin/placeholder/SQ.Project.dll": {}
@@ -2971,6 +2972,19 @@
         },
         "runtime": {
           "bin/placeholder/WPF.Admin.Themes.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "WPF.Admin.UserLogger/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/WPF.Admin.UserLogger.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WPF.Admin.UserLogger.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
@@ -7159,6 +7173,11 @@
       "path": "../WPF.Admin.Themes/WPF.Admin.Themes.csproj",
       "msbuildProject": "../WPF.Admin.Themes/WPF.Admin.Themes.csproj"
     },
+    "WPF.Admin.UserLogger/1.0.0": {
+      "type": "project",
+      "path": "../WPF.Admin.UserLogger/WPF.Admin.UserLogger.csproj",
+      "msbuildProject": "../WPF.Admin.UserLogger/WPF.Admin.UserLogger.csproj"
+    },
     "WPF.SharedMemory/1.0.0": {
       "type": "project",
       "path": "../WPF.SharedMemory/WPF.SharedMemory.csproj",
@@ -7192,6 +7211,7 @@
       "SharedMemoryDemoModules >= 1.0.0",
       "SystemModules >= 1.0.0",
       "WPF.Admin.Themes >= 1.0.0",
+      "WPF.Admin.UserLogger >= 1.0.0",
       "WPFAdmin.DialogModules >= 1.0.0",
       "WPFAdmin.LoginModules >= 1.0.0",
       "WPFAdmin.NavigationModules >= 1.0.0"
@@ -7260,6 +7280,9 @@
             },
             "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj": {
               "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.Themes\\WPF.Admin.Themes.csproj"
+            },
+            "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.UserLogger\\WPF.Admin.UserLogger.csproj": {
+              "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPF.Admin.UserLogger\\WPF.Admin.UserLogger.csproj"
             },
             "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPFAdmin.DialogModules\\WPFAdmin.DialogModules.csproj": {
               "projectPath": "E:\\项目\\瞬驱\\WPF.Admin.SQ.Project\\WPF-Admin-XPrim\\WPFAdmin.DialogModules\\WPFAdmin.DialogModules.csproj"

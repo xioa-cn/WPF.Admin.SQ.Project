@@ -58,3 +58,5 @@ E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\SQ.Project\obj\Debug\net8.
 E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\SQ.Project\obj\Debug\net8.0-windows\Component\StationFirst.g.cs
 E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\SQ.Project\obj\Debug\net8.0-windows\Component\CodeCollection.baml
 E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\SQ.Project\obj\Debug\net8.0-windows\Component\StationFirst.baml
+E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\SQ.Project\bin\Debug\net8.0-windows\WPF.Admin.UserLogger.dll
+E:\项目\瞬驱\WPF.Admin.SQ.Project\WPF-Admin-XPrim\SQ.Project\bin\Debug\net8.0-windows\WPF.Admin.UserLogger.pdb

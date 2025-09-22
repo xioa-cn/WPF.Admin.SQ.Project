@@ -53,7 +53,7 @@ namespace WPF.Admin.Themes.W_Dialogs {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WPF.Admin.Themes;component/w_dialogs/textdialog.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WPF.Admin.Themes;V1.0.0.0;component/w_dialogs/textdialog.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\W_Dialogs\TextDialog.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

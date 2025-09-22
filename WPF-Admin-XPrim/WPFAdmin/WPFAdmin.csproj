@@ -29,6 +29,7 @@
         <ProjectReference Include="..\SQ.Project\SQ.Project.csproj" />
         <ProjectReference Include="..\SystemModules\SystemModules.csproj" />
         <ProjectReference Include="..\WPF.Admin.Themes\WPF.Admin.Themes.csproj" />
+        <ProjectReference Include="..\WPF.Admin.UserLogger\WPF.Admin.UserLogger.csproj" />
         <ProjectReference Include="..\WPFAdmin.DialogModules\WPFAdmin.DialogModules.csproj" />
         <ProjectReference Include="..\WPFAdmin.LoginModules\WPFAdmin.LoginModules.csproj" />
         <ProjectReference Include="..\WPFAdmin.NavigationModules\WPFAdmin.NavigationModules.csproj" />

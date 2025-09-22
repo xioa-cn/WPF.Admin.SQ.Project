@@ -61,7 +61,7 @@ namespace WPF.Admin.Themes.Controls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WPF.Admin.Themes;component/controls/colorwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WPF.Admin.Themes;V1.0.0.0;component/controls/colorwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Controls\ColorWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
