@@ -54,7 +54,7 @@
             <ImageBrush ImageSource="/SQ.Project;component/Assets/panel.png" Stretch="Fill" />
         </Grid.Background>
 
-        <Grid Margin="15">
+        <Grid Margin="15" Background="Transparent">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
                 <RowDefinition />
@@ -98,7 +98,7 @@
                                 <Grid ClipToBounds="True">
                                     <Border
                                         x:Name="ImageContainer"
-                                        Background="{DynamicResource Background.Brush}"
+                                        Background="Transparent"
                                         CornerRadius="4"
                                         Opacity="0">
                                         <Grid Width="1920" Height="900">
@@ -111,7 +111,7 @@
                                                 HorizontalAlignment="Left"
                                                 VerticalAlignment="Top"
                                                 FontSize="25"
-                                                Foreground="{DynamicResource SYstem.Main.Color.Fill}"
+                                                Foreground="{DynamicResource Primary.Brush}"
                                                 Text="{Binding Name}" />
                                             <ContentControl Grid.Row="1" Content="{Binding Page}" />
                                         </Grid>
