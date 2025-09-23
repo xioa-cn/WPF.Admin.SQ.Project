@@ -2,13 +2,19 @@
 using CommunityToolkit.Mvvm.Messaging;
 using SQ.Project.Component;
 using System.Collections.ObjectModel;
+using SQ.Project.Core;
+using SQ.Project.Https;
+using SQ.Project.Interfaces;
+using SQ.Project.Models;
 using WPF.Admin.Service.Services;
 using WPF.Admin.UserLogger;
 
 namespace SQ.Project.ViewModels
 {
-    public partial class CodeCollectionViewModel : ObservableObject
+    public partial class CodeCollectionViewModel : RequestBindableBase,IWorkstation
     {
+        public string Wsid { get; set; } = "总线扫码";
+        
         [ObservableProperty] private bool _status;
 
         [ObservableProperty] private string _code = string.Empty;
@@ -17,14 +23,26 @@ namespace SQ.Project.ViewModels
 
         public ObservableCollection<string> Msg { get; set; }
 
-        public CodeCollectionViewModel()
+        public CodeCollectionViewModel() : base()
         {
             Msg = new ObservableCollection<string>();
 
             Status = true;
             Code = "ACC20250922154660-00001";
 
-            Task.Factory.StartNew(Test,TaskCreationOptions.LongRunning);
+            Task.Factory.StartNew(Test, TaskCreationOptions.LongRunning);
+
+            Task.Factory.StartNew(RequestTest);
+        }
+
+        private async Task RequestTest()
+        {
+            var result = await this.PostAsync<ResponseInfo<ResultMessageInfo>>(Api.TypeInBomPost,
+                new
+                {
+                    plid = Const.Plid,
+                    materialCode = "string"
+                });
         }
 
         private async Task Test()
@@ -54,7 +72,7 @@ namespace SQ.Project.ViewModels
                 }));
             }));
 
-            UserLogService.Instance?.LogInfo(message, "总线扫码");
+            UserLogService.Instance?.LogInfo(message, Wsid);
         }
     }
 }

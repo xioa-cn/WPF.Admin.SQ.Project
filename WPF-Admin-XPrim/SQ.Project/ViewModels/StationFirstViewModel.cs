@@ -2,14 +2,19 @@
 using CommunityToolkit.Mvvm.Messaging;
 using SQ.Project.Component;
 using System.Collections.ObjectModel;
-using WPF.Admin.Models;
+using SQ.Project.Core;
+using SQ.Project.Https;
+using SQ.Project.Interfaces;
+using SQ.Project.Models;
 using WPF.Admin.Service.Services;
 using WPF.Admin.UserLogger;
 
 namespace SQ.Project.ViewModels
 {
-    public partial class StationFirstViewModel : BindableBase
+    public partial class StationFirstViewModel : RequestBindableBase, IWorkstation
     {
+        public string Wsid { get; set; } = "OP10";
+
         [ObservableProperty] private string _code = string.Empty;
 
         [ObservableProperty] private bool _status;
@@ -31,6 +36,41 @@ namespace SQ.Project.ViewModels
             MesResult = true;
 
             Task.Factory.StartNew(Test, TaskCreationOptions.LongRunning);
+
+            Task.Factory.StartNew(RequestTest);
+        }
+
+        private async Task RequestTest()
+        {
+            var statusResult = await this.PostAsync<ResponseInfo<ResultMessageInfo>>(Api.StationStatusPost,
+                new StationStatusInfo()
+                {
+                    Wsid = Wsid,
+                    Status = 1,
+                    Msg = "测试数据"
+                }
+            );
+
+
+            var result = await this.PostAsync<ResponseInfo<ResultMessageInfo>>(Api.CheckCodePost,
+                new
+                {
+                    plid = Const.Plid,
+                    itm = "TESTOPERATION-010-00001",
+                    wsid = "OP10"
+                });
+
+            if (result.IsSuccess && result.Data.Result)
+            {
+                result = await this.PostAsync<ResponseInfo<ResultMessageInfo>>(Api.SaveDataPost,
+                    new SaveDataBody()
+                    {
+                        Wsid = "OP10",
+                        Itm = "TESTOPERATION-010-00001",
+                        Result = 1,
+                        PopOnline = DateTimeNowStr,
+                    });
+            }
         }
 
         private async Task Test()
@@ -61,7 +101,7 @@ namespace SQ.Project.ViewModels
                 });
             });
 
-            UserLogService.Instance?.LogInfo(message, "上线检测");
+            UserLogService.Instance?.LogInfo(message, Wsid);
         }
     }
 }
