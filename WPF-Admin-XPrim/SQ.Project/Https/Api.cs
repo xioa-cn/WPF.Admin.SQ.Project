@@ -101,5 +101,19 @@
             // }
             get { return BaseUrl + "api/StationStatusCollection/Status"; }
         }
+
+        /// <summary>
+        /// 激光码请求
+        /// </summary>
+        public static string RequestSerialCodePost
+        {
+            // RequestBody
+            // {
+            //     plid = "STA001",
+            //     itm = "TESTOPERATION-010-00001",
+            //     wsid = "OP20"
+            // }
+            get { return BaseUrl + "api/SeriesNumber/RequestSerial"; }
+        }
     }
 }
